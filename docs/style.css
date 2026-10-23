@@ -177,7 +177,7 @@ body{padding-bottom:5rem}
 /* simple page */
 .sub{font-size:1.1rem;margin:.2rem 0 .6rem}
 .meta{margin:0 0 .8rem}
-.meta span{display:block;margin:.15rem 0}
+.meta>span{display:block;margin:.15rem 0}
 .decide{border:0;padding:0;margin:0}
 .decide .chips{gap:.6rem}
 .decide .chip{flex:1 1 8rem;justify-content:center}
