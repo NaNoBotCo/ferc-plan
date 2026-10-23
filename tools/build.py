@@ -43,7 +43,7 @@ WORDS = {
         "h1": "More donations for FERC: a plan in five steps",
         "lede": [
             "Our work on steps 1 to 4 is free for FERC.",
-            "Steps 1, 2 and 4 run in November, before your talk (28 November) and the fundraiser (29 November). Steps 3 and 5 start in January.",
+            "Steps 1, 2 and 4 start in November, before your talk (28 November) and the fundraiser (29 November). Steps 3 and 5 start in January.",
             "FERC’s board decides on 31 October. Then we do the work, and you say yes to each part.",
         ],
         "go_choose": "Choose what FERC wants",
@@ -88,14 +88,14 @@ WORDS = {
                 "short": "Donations from each country",
                 "p": "FERC is leaving Myriad. (Myriad USA and Myriad Australia pass US and Australian gifts on to FERC today.) We help with that paperwork. Then we add a “How to give” page to fercthailand.org: one box per country, each saying whether the donor gets a tax receipt.",
                 "table": [
-                    ("Thailand", "Bank transfer, as now. Since 1 January 2026, a Thai tax deduction for a gift to a foundation goes through e-Donation, the Revenue Department’s online system. We ask the treasurer whether FERC is registered. If not, we find out what registering needs."),
+                    ("Thailand", "Bank transfer, as now. Since 1 January 2026, a Thai tax deduction for a gift to a foundation goes through e-Donation, the Revenue Department’s online system. We ask the treasurer whether FERC is registered. If not, we find out how FERC can register."),
                     ("Switzerland", "Bank transfer with a Swiss tax receipt, as now. The website explains it more clearly."),
                     ("USA", "CAF America, a US charity, takes the gift, gives the donor a US tax receipt, and sends the money to FERC. FERC’s page on Every.org, a US giving website, works through Myriad USA, so it may close when FERC leaves Myriad."),
                     ("Australia", "An Australian charity that can give Australian tax receipts, such as Global Development Group, takes gifts for FERC. This is not ready in November. Until then: bank transfer to FERC’s Thai account."),
                     ("UK, Netherlands, others", "Bank transfer to FERC’s Thai account, for example with Wise, a money-transfer service. No tax receipt in the donor’s country."),
                 ],
                 "we": "Compare the ways to give, with costs and time. Prepare the papers for leaving Myriad and for CAF America. Write a short email to US and Australian donors. Build the “How to give” page.",
-                "you": "Ask the treasurer about e-Donation. Sign the applications. Send the email to donors.",  # stylecheck: allow — a task list for the client
+                "you": "Tell the treasurer we will ask about e-Donation. Give us an administrator login for fercthailand.org. Sign the applications. Send the email to donors.",  # stylecheck: allow — a task list for the client
                 "when": "November, before the 28th",
                 "cost": "Our work: free. CAF America keeps a fee from each US gift. We ask them how much.",
             },
@@ -104,7 +104,7 @@ WORDS = {
                 "short": "Newsletter moved to Brevo",
                 "p": "MailPoet, your newsletter tool, is free up to 500 contacts, and FERC has reached 500. Brevo, another newsletter service, is free for more than 500 contacts. It sends 300 emails a day. So a newsletter to 500 people goes out over two days: 300 on the first day, the other 200 the next day with one more click. Free Brevo newsletters end with a small line, “Sent with Brevo”.",
                 "we": "Move the list to Brevo. People who unsubscribed stay unsubscribed. Make a FERC newsletter design and a sign-up form on fercthailand.org. Write a one-page guide.",
-                "you": "Say yes to the move. Then send each newsletter yourself, with the guide.",
+                "you": "Say yes to the move. Then you send each newsletter. The guide shows how.",
                 "when": "November",
                 "cost": "Free",
             },
@@ -122,7 +122,7 @@ WORDS = {
                 ],
                 "map": "See the school map",
                 "we": "Build it inside FERC’s WordPress.",
-                "you": "Give us an administrator login of our own. Tell us which company hosts the website.",
+                "you": "Tell us which company hosts the website.",
                 "when": "January",
                 "cost": "Our work: free. FERC pays for hosting, as now.",
             },
@@ -136,7 +136,7 @@ WORDS = {
                     "A count of website visits and clicks on “How to give”, for the board",
                 ],
                 "we": "Write the posts and make the video. Apply for Ad Grants.",
-                "you": "Say yes to each month’s posts at once. FERC posts them, or gives us access to post.",
+                "you": "Once a month, say yes to that month’s posts. FERC posts them, or gives us access to post.",
                 "when": "November and December",
                 "cost": "Free",
             },
@@ -146,7 +146,7 @@ WORDS = {
                 "p": "Today: Heinz collects about 100 student reports, twice a year. You turn them into reports for sponsors. FERC keeps two lists: the master list and the treasurer’s list.",
                 "list": [
                     "One shared list instead of two, with a column for each student’s permission",
-                    "Type a student’s report once. The sponsor’s report is then ready to send.",
+                    "Type a student’s report once; the sponsor’s report is made from it.",
                     "One page showing which reports are in, missing or sent",
                 ],
                 "p2": "The list holds details of students under 18. FERC decides who can open it. Contact with schools goes through CMSEO, as now.",
@@ -156,12 +156,12 @@ WORDS = {
         ],
         "dao": "Doi Chiang Dao in the clouds",
         "ex_h": "Extras FERC can add",
-        "ex_p": "Each extra is optional. These are FERC’s prices, in Thai baht. Up to half can be paid in trade (see below).",
+        "ex_p": "Each extra is optional. Prices for FERC, in Thai baht. Up to half can be paid in trade.",
         "once": "once",
         "month": "a month",
         "stop_any": "stop any month",
         "extras": {
-            "book": ("Gift book for the treasurer", "Each gift is one row: way of giving, fee, baht and Swiss francs. A thank-you to each donor. A statement for the board each month. Only if the treasurer wants it."),
+            "book": ("Gift record for the treasurer", "Each gift is one row: way of giving, fee, baht and Swiss francs. A thank-you to each donor. A statement for the board each month. Only if the treasurer wants it."),
             "posts": ("Posts from January to June", "Two posts a week after the free months. You say yes once a month."),
             "kit": ("Talk and fundraiser kit", "Large-print slides for your talk on 28 November. “How to give” cards with a QR code for each table on 29 November. A thank-you email to guests on 30 November."),
             "ads": ("Ad Grants care", "If Google says yes: we keep the free ads working within Google’s rules, and send the board one line a month."),
@@ -179,16 +179,16 @@ WORDS = {
         "tr_note": "Introductions are separate. They earn FERC money (next section).",
         "co_h": "For all of Chiang Mai",
         "co": [
-            "Many Chiang Mai charities and clubs have the same problem as FERC: donors abroad, no easy way to give, no clear record of gifts.",
-            "Any group can get the same giving page as FERC, with a record of every gift, paid into its own bank account. Price for other groups: ฿30,000 to set up, then ฿10,000 a month, stop any month.",
+            "Many Chiang Mai charities and clubs have donors abroad, as FERC does.",
+            "Other groups can get a giving page like FERC’s. Gifts go to the group’s own bank account, with a record of each gift. Price for other groups: ฿30,000 to set up, then ฿10,000 a month, stop any month. For FERC, its giving page is part of step 1 and free.",
             "If you introduce someone who then hires us, for this or any other work, we give FERC 20% of what they pay us in their first year, as their payments reach us.",
         ],
         "intro_btn": "Introduce someone",
         "intro_subject": "An introduction: Hongdam",
-        "intro_body": "Dear …,\n\nI would like to introduce NaN from Hongdam (copied here). They are helping FERC with donations from abroad and with our website. I think they could help you with …\n\nIf you work with them, FERC receives 20% of your first year’s fees for our students.\n\nBest wishes,\nEveline",
+        "intro_body": "Dear …,\n\nI would like to introduce NaN from Hongdam (copied here). They made FERC’s giving page and school map. I think they could help you with …\n\nIf you hire them, they give FERC 20% of what you pay them in the first year, for our students.\n\nBest wishes,\nEveline",
         "ch_h": "Choose",
         "ch_p": "Tick what FERC wants. Nothing is ticked yet. The board decides on 31 October; you can send a first choice now and change it later.",
-        "ch_plan": "The plan (free)",
+        "ch_plan": "The plan (steps 1 to 4 are free)",
         "ch_step5": "Step 5 in January: talk about it",
         "ch_extras": "Extras",
         "ch_pay": "How FERC pays for extras",
@@ -196,10 +196,13 @@ WORDS = {
         "ch_trade": "Trade FERC could offer",
         "ch_groups": "Groups that may want the same giving page (names, optional)",
         "ch_name": "Your name",
-        "ch_total": "Extras",
-        "ch_none": "No extras",
+        "ch_total": "Total for extras",
+        "ch_none": "none",
+        "ch_and": "and",
+        "ch_money": "In money",
         "ch_send": "Send to NaN by email",
         "ch_copy": "Copy",
+        "ch_help": "This opens your email with your choices. Press Send there. No email program? Press Copy.",
         "ch_copied": "Copied. Paste it into an email to nan@motdang.net.",
         "ch_subject": "FERC: our choices",
         "ch_msg_h": "FERC’s choices",
@@ -222,11 +225,12 @@ WORDS = {
         "photos": "Photos by Takeaway, a Wikimedia Commons user",
         "board_title": "FERC · Plan for the board, 31 October 2026",
         "board_lede": "Five steps from Hongdam. The board decides. Eveline says yes to each part. We do the work.",
-        "board_ask": "For the board: yes or no to steps 1 to 4 (free). Step 5 comes back in January, with a price.",
-        "board_cols": ("", "Step", "When", "Cost to FERC"),
-        "board_tick": "Tick the boxes, then send a photo of this page to nan@motdang.net.",
-        "board_groups": "Groups that may want the same giving page:",
+        "board_ask": "For the board: yes or no to steps 1 to 4 (free) and to each extra. Step 5: we bring a price in January.",
+        "board_cols": ("Yes", "No", "Step", "When", "Cost to FERC"),
+        "board_tick": "Tick, add your name and the date, then send a photo of each page to nan@motdang.net.",
+        "board_groups": "Groups that may want a giving page like FERC’s (other groups pay ฿30,000 to set up, then ฿10,000 a month):",
         "print": "Print",
+        "board_sign": "Name: ____________________   Date: ____________",
         "back": "Back to the plan",
     },
     "de": {
@@ -244,7 +248,7 @@ WORDS = {
         "h1": "Mehr Spenden für FERC: ein Plan in fünf Schritten",
         "lede": [
             "Unsere Arbeit für die Schritte 1 bis 4 ist für FERC gratis.",
-            "Die Schritte 1, 2 und 4 laufen im November, vor Ihrem Vortrag (28. November) und dem Spendenanlass (29. November). Die Schritte 3 und 5 beginnen im Januar.",
+            "Die Schritte 1, 2 und 4 beginnen im November, vor Ihrem Vortrag (28. November) und dem Spendenanlass (29. November). Die Schritte 3 und 5 beginnen im Januar.",
             "Der Vorstand von FERC entscheidet am 31. Oktober. Dann machen wir die Arbeit, und Sie sagen Ja zu jedem Teil.",
         ],
         "go_choose": "Auswählen, was FERC möchte",
@@ -253,7 +257,7 @@ WORDS = {
         "who_h": "Wer wir sind",
         "who": [
             "Hongdam ist eine kleine Web-Firma in Chiang Mai und Chiang Rai. Wir sind sechs Personen: aus Thailand, Myanmar und den USA.",
-            "Wir bauen Websites und Online-Werkzeuge auf Thai und Englisch, für Firmen, gemeinnützige Organisationen und Vereine. Wir betreiben auch motdang.net, einen Führer zu Chiang Mai.",
+            "Wir bauen Websites und Online-Werkzeuge auf Thai und Englisch, für Firmen, gemeinnützige Organisationen und Vereine. Wir betreiben auch motdang.net, einen Online-Stadtführer für Chiang Mai.",
             "Für FERC haben wir schon eine Spendenseite und eine Karte der 34 Schulen gemacht.",
             "Am Treffen: NaN (Ihre Ansprechperson), Marcus (Myat Kaung Thant) und Michael.",
         ],
@@ -287,16 +291,16 @@ WORDS = {
             {
                 "h": "Spenden aus jedem Land",
                 "short": "Spenden aus jedem Land",
-                "p": "FERC verlässt Myriad. (Myriad USA und Myriad Australia leiten heute Spenden aus den USA und Australien an FERC weiter.) Wir helfen mit diesen Unterlagen. Dann kommt auf fercthailand.org eine Seite «So können Sie spenden», mit einem Abschnitt pro Land. Jeder Abschnitt sagt, ob es eine Spendenbestätigung gibt.",
+                "p": "FERC verlässt Myriad. (Myriad USA und Myriad Australia leiten heute Spenden aus den USA und Australien an FERC weiter.) Wir helfen bei den Unterlagen für den Ausstieg. Dann kommt auf fercthailand.org eine Seite «So können Sie spenden», mit einem Abschnitt pro Land. Jeder Abschnitt sagt, ob es eine Spendenbestätigung gibt.",
                 "table": [
-                    ("Thailand", "Banküberweisung wie heute. Seit dem 1. Januar 2026 läuft ein thailändischer Steuerabzug für eine Spende an eine Stiftung über e-Donation, das Online-System der Steuerbehörde. Wir fragen den Kassier, ob FERC eingetragen ist. Falls nicht, klären wir, was der Eintrag braucht."),
+                    ("Thailand", "Banküberweisung wie heute. Seit dem 1. Januar 2026 läuft ein thailändischer Steuerabzug für eine Spende an eine Stiftung über e-Donation, das Online-System der Steuerbehörde. Wir fragen den Kassier, ob FERC eingetragen ist. Falls nicht, klären wir, was für den Eintrag nötig ist."),
                     ("Schweiz", "Banküberweisung mit Schweizer Spendenbestätigung, wie heute. Die Website erklärt es klarer."),
                     ("USA", "CAF America, eine gemeinnützige Organisation in den USA, nimmt die Spende an, gibt eine US-Spendenbestätigung und schickt das Geld an FERC. Die Seite von FERC auf Every.org, einer amerikanischen Spenden-Website, läuft über Myriad USA und wird deshalb vielleicht eingestellt, wenn FERC Myriad verlässt."),
-                    ("Australien", "Eine australische gemeinnützige Organisation mit Recht auf australische Spendenbestätigungen, zum Beispiel Global Development Group, nimmt Spenden für FERC an. Das ist im November noch nicht bereit. Bis dahin: Überweisung auf das thailändische Konto von FERC."),
+                    ("Australien", "Eine australische gemeinnützige Organisation, die australische Spendenbestätigungen ausstellen darf, zum Beispiel Global Development Group, nimmt Spenden für FERC an. Das dauert länger als bis November. Bis dahin: Überweisung auf das thailändische Konto von FERC."),
                     ("Grossbritannien, Niederlande, andere", "Überweisung auf das thailändische Konto von FERC, zum Beispiel mit Wise, einem Dienst für Geldüberweisungen. Keine Spendenbestätigung im Land des Spenders."),
                 ],
                 "we": "Die Wege vergleichen, mit Kosten und Dauer. Die Unterlagen für den Ausstieg bei Myriad und für CAF America vorbereiten. Eine kurze E-Mail an die Spender in den USA und Australien schreiben. Die Seite «So können Sie spenden» bauen.",
-                "you": "Den Kassier zu e-Donation fragen. Die Anträge unterschreiben. Die E-Mail an die Spender schicken.",
+                "you": "Dem Kassier sagen, dass wir zu e-Donation fragen. Uns ein eigenes Administrator-Login für fercthailand.org geben. Die Anträge unterschreiben. Die E-Mail an die Spender schicken.",
                 "when": "November, vor dem 28.",
                 "cost": "Unsere Arbeit: gratis. CAF America verlangt eine Gebühr pro US-Spende. Wir verlangen eine Offerte.",
             },
@@ -305,7 +309,7 @@ WORDS = {
                 "short": "Newsletter zu Brevo",
                 "p": "MailPoet, Ihr Newsletter-Programm, ist bis 500 Kontakte gratis, und FERC hat 500 erreicht. Brevo, ein anderer Newsletter-Dienst, ist auch für mehr als 500 Kontakte gratis. Brevo verschickt 300 E-Mails pro Tag. Ein Newsletter an 500 Personen geht also über zwei Tage: 300 am ersten Tag, die anderen 200 am nächsten Tag mit einem weiteren Klick. In der Gratisversion endet jeder Newsletter mit einer kleinen Zeile «Sent with Brevo».",
                 "we": "Die Liste zu Brevo übertragen. Wer sich abgemeldet hat, bleibt abgemeldet. Ein FERC-Design für den Newsletter und ein Anmeldeformular auf fercthailand.org machen. Eine Anleitung auf einer Seite schreiben.",
-                "you": "Ja sagen zum Umzug. Dann jeden Newsletter selbst verschicken, mit der Anleitung.",
+                "you": "Ja sagen zum Umzug. Dann verschicken Sie jeden Newsletter selbst, mit Hilfe der Anleitung.",
                 "when": "November",
                 "cost": "Gratis",
             },
@@ -317,13 +321,13 @@ WORDS = {
                     "Ein Knopf «Patenschaft übernehmen» auf jeder Seite",
                     "Die Seite «So können Sie spenden» aus Schritt 1",
                     "Geschichten von Schülern, nur wenn sie im Einwilligungsfeld Ja angekreuzt haben",
-                    "Die Schulkarte: 34 Schulen, jede mit Name, Bezirk und Foto",
+                    "Die Schulkarte: 34 Schulen, jede mit Namen, Bezirk und Foto",
                     "Schneller auf dem Handy",
                     "Eine kurze Anleitung und eine Stunde mit Ihnen und Heinz, um alles zu zeigen",
                 ],
                 "map": "Die Schulkarte ansehen",
                 "we": "Alles im WordPress von FERC bauen.",
-                "you": "Uns ein eigenes Administrator-Login geben. Uns sagen, welche Firma die Website betreibt (Hosting).",
+                "you": "Uns sagen, bei welcher Firma die Website gehostet ist.",
                 "when": "Januar",
                 "cost": "Unsere Arbeit: gratis. FERC bezahlt das Hosting wie heute.",
             },
@@ -337,7 +341,7 @@ WORDS = {
                     "Eine Zählung der Website-Besuche und der Klicks auf «So können Sie spenden», für den Vorstand",
                 ],
                 "we": "Die Beiträge schreiben und das Video machen. Ad Grants beantragen.",
-                "you": "Einmal pro Monat Ja sagen zu allen Beiträgen. FERC veröffentlicht sie, oder gibt uns Zugang dafür.",
+                "you": "Einmal pro Monat Ja sagen zu den Beiträgen des Monats. FERC veröffentlicht sie, oder gibt uns Zugang dafür.",
                 "when": "November und Dezember",
                 "cost": "Gratis",
             },
@@ -347,7 +351,7 @@ WORDS = {
                 "p": "Heute: Heinz sammelt zweimal im Jahr rund 100 Schülerberichte. Sie machen daraus Berichte für die Paten. FERC führt zwei Listen: die Hauptliste und die Liste des Kassiers.",
                 "list": [
                     "Eine gemeinsame Liste statt zwei, mit einer Spalte für die Einwilligung jedes Schülers",
-                    "Den Bericht eines Schülers einmal eintippen. Daraus entsteht der Patenbericht, bereit zum Versand.",
+                    "Den Bericht eines Schülers einmal eintippen; daraus entsteht der Patenbericht.",
                     "Eine Seite, die zeigt, welche Berichte da sind, fehlen oder verschickt sind",
                 ],
                 "p2": "Die Liste enthält Angaben über Schüler unter 18. FERC bestimmt, wer sie öffnen kann. Der Kontakt mit den Schulen läuft wie heute über das CMSEO.",
@@ -356,13 +360,13 @@ WORDS = {
             },
         ],
         "dao": "Doi Chiang Dao in den Wolken",
-        "ex_h": "Zusätze, die FERC wählen kann",
-        "ex_p": "Jeder Zusatz ist freiwillig. Das sind die Preise für FERC, in thailändischen Baht. Bis zur Hälfte kann FERC mit Gegenleistungen bezahlen (siehe unten).",
+        "ex_h": "Zusatzleistungen, die FERC wählen kann",
+        "ex_p": "Jede Zusatzleistung ist freiwillig. Preise für FERC, in thailändischen Baht. Bis zur Hälfte kann FERC mit Gegenleistungen bezahlen.",
         "once": "einmalig",
         "month": "pro Monat",
-        "stop_any": "jeden Monat kündbar",
+        "stop_any": "monatlich kündbar",
         "extras": {
-            "book": ("Spendenbuch für den Kassier", "Jede Spende ist eine Zeile: Weg, Gebühr, Baht und Schweizer Franken. Ein Dankeschön an jeden Spender. Jeden Monat eine Übersicht für den Vorstand. Nur wenn der Kassier es möchte."),
+            "book": ("Spendenliste für den Kassier", "Jede Spende ist eine Zeile: Weg, Gebühr, Baht und Schweizer Franken. Ein Dankeschön an jeden Spender. Jeden Monat eine Übersicht für den Vorstand. Nur wenn der Kassier es möchte."),
             "posts": ("Beiträge von Januar bis Juni", "Zwei Beiträge pro Woche nach den Gratis-Monaten. Sie sagen einmal pro Monat Ja."),
             "kit": ("Paket für Vortrag und Spendenanlass", "Folien in grosser Schrift für Ihren Vortrag am 28. November. Karten «So können Sie spenden» mit QR-Code für jeden Tisch am 29. November. Eine Dankes-E-Mail an die Gäste am 30. November."),
             "ads": ("Betreuung von Ad Grants", "Wenn Google Ja sagt: Wir halten die Gratis-Werbung nach den Regeln von Google am Laufen und schicken dem Vorstand jeden Monat eine Zeile."),
@@ -371,7 +375,7 @@ WORDS = {
             "thai": ("Website auf Thai", "Thai-Seiten neben den englischen, geprüft von einer Person mit Thai als Muttersprache."),
         },
         "tr_h": "Mit Gegenleistungen bezahlen",
-        "tr_p": "FERC kann bis zur Hälfte jedes Zusatzes mit einer Gegenleistung statt mit Geld bezahlen. Zum Beispiel:",
+        "tr_p": "FERC kann bis zur Hälfte jeder Zusatzleistung mit einer Gegenleistung statt mit Geld bezahlen. Zum Beispiel:",
         "trades": {
             "credit": "Eine Zeile unten auf fercthailand.org, «Website und Spendenseite: Hongdam», ein Dank im Newsletter, und die Erlaubnis, die Seiten von FERC als unsere Arbeit zu zeigen.",
             "thanks": "Unser Name auf der Dankesfolie und eine Tischkarte am Spendenanlass vom 29. November.",
@@ -380,33 +384,36 @@ WORDS = {
         "tr_note": "Empfehlungen sind etwas anderes. Sie bringen FERC Geld (nächster Abschnitt).",
         "co_h": "Für ganz Chiang Mai",
         "co": [
-            "Viele gemeinnützige Organisationen und Vereine in Chiang Mai haben das gleiche Problem wie FERC: Spender im Ausland, kein einfacher Weg zu spenden, keine klare Übersicht der Spenden.",
-            "Jede Gruppe kann die gleiche Spendenseite wie FERC bekommen, mit einer Übersicht jeder Spende, bezahlt auf ihr eigenes Bankkonto. Preis für andere Gruppen: 30’000 Baht für die Einrichtung, dann 10’000 Baht pro Monat, jeden Monat kündbar.",
-            "Wenn Sie uns jemanden vorstellen, der uns dann einen Auftrag gibt, für diese oder eine andere Arbeit, spenden wir FERC 20 % von dem, was er uns im ersten Jahr bezahlt, sobald seine Zahlungen eintreffen.",
+            "Viele gemeinnützige Organisationen und Vereine in Chiang Mai haben Spender im Ausland, wie FERC.",
+            "Andere Gruppen können eine Spendenseite wie die von FERC bekommen. Die Spenden gehen auf das eigene Bankkonto der Gruppe, mit einer Übersicht über jede Spende. Preis für andere Gruppen: 30’000 Baht für die Einrichtung, dann 10’000 Baht pro Monat, monatlich kündbar. Für FERC ist die Spendenseite Teil von Schritt 1 und gratis.",
+            "Wenn Sie uns jemanden vorstellen, der uns dann für diese oder eine andere Arbeit einen Auftrag gibt, spenden wir FERC 20 % von dem, was er uns im ersten Jahr bezahlt, sobald seine Zahlungen eintreffen.",
         ],
         "intro_btn": "Jemanden vorstellen",
         "intro_subject": "Eine Empfehlung: Hongdam",
-        "intro_body": "Liebe/r …\n\nIch möchte Ihnen NaN von Hongdam vorstellen (in Kopie). Hongdam hilft FERC bei Spenden aus dem Ausland und bei unserer Website. Ich glaube, Hongdam könnte Ihnen helfen bei …\n\nWenn Sie mit Hongdam arbeiten, erhält FERC 20 % Ihrer Gebühren im ersten Jahr für unsere Schüler.\n\nHerzliche Grüsse\nEveline",
+        "intro_body": "Liebe/r …\n\nIch möchte Ihnen NaN von Hongdam vorstellen (in Kopie). Hongdam hat die Spendenseite und die Schulkarte von FERC gemacht. Ich glaube, Hongdam könnte Ihnen helfen bei …\n\nWenn Sie mit Hongdam zusammenarbeiten, erhält FERC 20 % von dem, was Sie Hongdam im ersten Jahr bezahlen, für unsere Schüler.\n\nHerzliche Grüsse\nEveline",
         "ch_h": "Auswählen",
         "ch_p": "Kreuzen Sie an, was FERC möchte. Noch ist nichts angekreuzt. Der Vorstand entscheidet am 31. Oktober; Sie können jetzt eine erste Wahl schicken und sie später ändern.",
-        "ch_plan": "Der Plan (gratis)",
+        "ch_plan": "Der Plan (Schritte 1 bis 4 gratis)",
         "ch_step5": "Schritt 5 im Januar: darüber sprechen",
-        "ch_extras": "Zusätze",
-        "ch_pay": "Wie FERC die Zusätze bezahlt",
+        "ch_extras": "Zusatzleistungen",
+        "ch_pay": "Wie FERC die Zusatzleistungen bezahlt",
         "pay": ["Geld", "Halb Geld, halb Gegenleistung", "Zuerst sprechen"],
         "ch_trade": "Gegenleistungen, die FERC anbieten könnte",
         "ch_groups": "Gruppen, die die gleiche Spendenseite möchten (Namen, freiwillig)",
         "ch_name": "Ihr Name",
-        "ch_total": "Zusätze",
-        "ch_none": "Keine Zusätze",
+        "ch_total": "Summe der Zusatzleistungen",
+        "ch_none": "keine",
+        "ch_and": "und",
+        "ch_money": "Davon in Geld",
         "ch_send": "Per E-Mail an NaN schicken",
         "ch_copy": "Kopieren",
+        "ch_help": "Damit öffnet sich Ihr E-Mail-Programm mit Ihrer Wahl. Drücken Sie dort auf Senden. Kein E-Mail-Programm? Drücken Sie Kopieren.",
         "ch_copied": "Kopiert. Fügen Sie es in eine E-Mail an nan@motdang.net ein.",
         "ch_subject": "FERC: unsere Wahl",
         "ch_msg_h": "Die Wahl von FERC",
         "priv_h": "Schutz der Schüler",
         "priv": [
-            "Auf der Website: nur, wozu ein Schüler im Einwilligungsfeld Ja angekreuzt hat.",
+            "Auf der Website: nur das, wozu ein Schüler im Einwilligungsfeld Ja angekreuzt hat.",
             "E-Mail, LINE und Telefonnummern der Schüler stehen nicht auf der Website.",
             "Kontakt mit Schulen und Schülern läuft über das CMSEO, wie heute.",
         ],
@@ -423,11 +430,12 @@ WORDS = {
         "photos": "Fotos von Takeaway, einem Nutzer von Wikimedia Commons",
         "board_title": "FERC · Plan für den Vorstand, 31. Oktober 2026",
         "board_lede": "Fünf Schritte von Hongdam. Der Vorstand entscheidet. Eveline sagt Ja zu jedem Teil. Wir machen die Arbeit.",
-        "board_ask": "Für den Vorstand: Ja oder Nein zu den Schritten 1 bis 4 (gratis). Schritt 5 kommt im Januar zurück, mit einem Preis.",
-        "board_cols": ("", "Schritt", "Wann", "Kosten für FERC"),
-        "board_tick": "Kreuzen Sie an und schicken Sie ein Foto dieser Seite an nan@motdang.net.",
-        "board_groups": "Gruppen, die die gleiche Spendenseite möchten:",
+        "board_ask": "Für den Vorstand: Ja oder Nein zu den Schritten 1 bis 4 (gratis) und zu jeder Zusatzleistung. Schritt 5 legen wir im Januar mit einem Preis vor.",
+        "board_cols": ("Ja", "Nein", "Schritt", "Wann", "Kosten für FERC"),
+        "board_tick": "Ankreuzen, Name und Datum dazuschreiben, dann ein Foto jeder Seite an nan@motdang.net schicken.",
+        "board_groups": "Gruppen, die eine Spendenseite wie die von FERC möchten (andere Gruppen zahlen 30’000 Baht für die Einrichtung, dann 10’000 Baht pro Monat):",
         "print": "Drucken",
+        "board_sign": "Name: ____________________   Datum: ____________",
         "back": "Zurück zum Plan",
     },
 }
@@ -451,14 +459,16 @@ PHOTOS = [
 e = html.escape
 
 
-def baht(n):
+def baht(n, w=None):
+    if w and w["lang"].startswith("de"):
+        return f"{n:,}".replace(",", "’") + " Baht"
     return "฿" + f"{n:,}"
 
 
 def price(w, once, month):
     if once:
-        return f"{baht(once)} {w['once']}"
-    return f"{baht(month)} {w['month']}, {w['stop_any']}"
+        return f"{baht(once, w)} {w['once']}"
+    return f"{baht(month, w)} {w['month']}, {w['stop_any']}"
 
 
 def head(w, rel, title, path):
@@ -582,9 +592,11 @@ def chooser(w):
         "plan": w["ch_plan"], "extras": w["ch_extras"], "pay": w["ch_pay"], "trade": w["ch_trade"],
         "groups": w["ch_groups"], "name": w["ch_name"], "total": w["ch_total"], "none": w["ch_none"],
         "once": w["once"], "month": w["month"], "copied": w["ch_copied"],
+        "and": w["ch_and"], "money": w["ch_money"], "de": w["lang"].startswith("de"),
+        "half": w["pay"][1],
     }, ensure_ascii=False)
     return f"""<p>{e(w['ch_p'])}</p>
-<form id="chooser" data-cfg="{e(cfg)}">
+<form id="chooser" action="#choose" onsubmit="return false" data-cfg="{e(cfg)}">
   <fieldset><legend>{e(w['ch_plan'])}</legend>{steps}</fieldset>
   <fieldset><legend>{e(w['ch_extras'])}</legend>{extras}</fieldset>
   <fieldset><legend>{e(w['ch_pay'])}</legend>{pay}</fieldset>
@@ -593,6 +605,7 @@ def chooser(w):
   <label class="field">{e(w['ch_name'])}<input type="text" name="name" autocomplete="name"></label>
   <p class="total" id="total" aria-live="polite">{e(w['ch_total'])}: {e(w['ch_none'])}</p>
   <p class="row"><a class="cta" id="send" href="mailto:{MAIL}">{e(w['ch_send'])}</a> <button class="btn" type="button" id="copy">{e(w['ch_copy'])}</button></p>
+  <p class="small">{e(w['ch_help'])}</p>
   <p class="small" id="copied" aria-live="polite"></p>
 </form>
 """
@@ -642,13 +655,16 @@ def page(w, rel, path):
 
 
 def board(w, rel, path):
-    c0, c1, c2, c3 = w["board_cols"]
+    c0, c1, c2c, c2, c3 = w["board_cols"]
+    cy, cn = c0, c1
     rows = "".join(
-        f'<tr><td class="box" aria-hidden="true">☐</td><th scope="row"><span class="n">{i+1}</span> {e(s["short"])}</th><td data-l="{e(c2)}">{e(s["when"])}</td><td data-l="{e(c3)}">{e(s["cost"])}</td></tr>'
-        for i, s in enumerate(w["steps"])
+        f'<tr><td class="box" data-l="{e(cy)}">☐</td><td class="box" data-l="{e(cn)}">☐</td><th scope="row"><span class="n">{i+1}</span> {e(s["short"])}</th><td data-l="{e(c2)}">{e(s["when"])}</td><td data-l="{e(c3)}">{e(s["cost"])}</td></tr>'
+        for i, s in enumerate(w["steps"][:4])
     )
+    s5 = w["steps"][4]
+    rows += f'<tr><td class="box"></td><td class="box"></td><th scope="row"><span class="n">5</span> {e(s5["short"])}</th><td data-l="{e(c2)}">{e(s5["when"])}</td><td data-l="{e(c3)}">{e(s5["cost"])}</td></tr>'
     ex = "".join(
-        f'<tr><td class="box" aria-hidden="true">☐</td><th scope="row">{e(w["extras"][k][0])}</th><td colspan="2" data-l="{e(c3)}">{e(price(w, o, m))}</td></tr>'
+        f'<tr><td class="box" data-l="{e(cy)}">☐</td><td class="box" data-l="{e(cn)}">☐</td><th scope="row">{e(w["extras"][k][0])}</th><td colspan="2" data-l="{e(c3)}">{e(price(w, o, m))}</td></tr>'
         for k, o, m in EXTRAS
     )
     pay = " &nbsp; ".join(f"☐ {e(p)}" for p in w["pay"])
@@ -659,15 +675,18 @@ def board(w, rel, path):
   <h1>{e(w['board_title'])}</h1>
   <p class="lede">{e(w['board_lede'])}</p>
   <p class="ask">{e(w['board_ask'])}</p>
-  <table class="board"><thead><tr><th scope="col"><span class="vh">☐</span></th><th scope="col">{e(c1)}</th><th scope="col">{e(c2)}</th><th scope="col">{e(c3)}</th></tr></thead><tbody>{rows}</tbody></table>
+  <p class="ask">{e(w['board_tick'])}</p>
+  <table class="board"><thead><tr><th scope="col" class="box">{e(c0)}</th><th scope="col" class="box">{e(c1)}</th><th scope="col">{e(c2c)}</th><th scope="col">{e(c2)}</th><th scope="col">{e(c3)}</th></tr></thead><tbody>{rows}</tbody></table>
   <h2>{e(w['ex_h'])}</h2>
   <p>{e(w['ex_p'])}</p>
-  <table class="board"><tbody>{ex}</tbody></table>
+  <table class="board"><thead><tr><th scope="col" class="box">{e(c0)}</th><th scope="col" class="box">{e(c1)}</th><th scope="col">{e(w['ch_extras'])}</th><th scope="col" colspan="2">{e(c3)}</th></tr></thead><tbody>{ex}</tbody></table>
   <p><b>{e(w['ch_pay'])}:</b> {pay}</p>
+  <p><b>{e(w['tr_h'])}:</b></p>
+  {ul(w["trades"].values(), "")}
   <h2>{e(w['co_h'])}</h2>
   <p>{e(w['co'][2])}</p>
   <p>{e(w['board_groups'])} ________________________________</p>
-  <p class="ask">{e(w['board_tick'])}</p>
+  <p>{e(w['board_sign'])}</p>
   <h2>{e(w['priv_h'])}</h2>
   {priv}
   <p class="small">{e(w['who'][0])} {MAIL} · {URL}</p>
