@@ -174,3 +174,16 @@ details[open] summary::after{content:"▴"}
 .board .opts{font-weight:400;display:inline-block;margin-top:.3rem}
 @media screen{.boardpage .box{display:none}}
 body{padding-bottom:5rem}
+/* simple page */
+.sub{font-size:1.1rem;margin:.2rem 0 .6rem}
+.meta{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;margin:0 0 .8rem}
+.decide{border:0;padding:0;margin:0}
+.decide .chips{gap:.6rem}
+.decide .chip{flex:1 1 8rem;justify-content:center}
+.step .card .needs{color:var(--ink);font-size:.95rem}
+details.big{border:0;padding:0;margin:0}
+details.big>summary h2{display:inline;font-size:1.55rem}
+details.big>summary{min-height:56px}
+.step details{background:var(--bg)}
+#extras .pick b{display:block}
+#extras .pick .pr{display:block}

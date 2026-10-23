@@ -61,7 +61,7 @@
     return !!d && !d.open && !el.closest('summary');
   }
   function blocks(scope) {
-    if (scope.id === 'choose') {
+    if (scope.id === 'send') {
       var pv = document.getElementById('pv');
       if (pv) return [{ el: pv.parentNode, text: pv.textContent }];
     }
@@ -105,7 +105,7 @@
   var form = document.getElementById('chooser');
   if (!form) return;
   var c = JSON.parse(form.dataset.cfg);
-  var send = document.getElementById('send'), total = document.getElementById('total');
+  var send = document.getElementById('sendbtn'), total = document.getElementById('total');
   var pv = document.getElementById('pv'), copied = document.getElementById('copied');
   var fmt = function (n) {
     var t = n.toLocaleString('en-US');
@@ -136,7 +136,7 @@
       if (m) parts.push(fmt(m) + ' ' + c.month);
       return parts.join(' ' + c.and + ' ');
     }
-    var half = picked('pay').some(function (x) { return x.value === c.half; });
+    var half = picked('half').length > 0;
     var sum = once || month;
     var sumText = c.total + ': ' + (sum ? both(once, month) : c.none);
     if (sum && half) sumText += '. ' + c.money + ': ' + both(once / 2, month / 2);
@@ -148,14 +148,17 @@
       items.forEach(function (t) { lines.push('- ' + t); });
       lines.push('');
     }
-    block(c.plan, picked('step').map(function (x) { return x.dataset.label; }));
-    block(c.web, picked('web').map(function (x) { return x.dataset.label; }));
+    var steps = [];
+    form.querySelectorAll('fieldset.decide').forEach(function (fs) {
+      var p = Array.prototype.filter.call(fs.querySelectorAll('input'), function (x) { return x.checked; })[0];
+      if (p) steps.push(fs.dataset.step + ': ' + (p.dataset.label || p.value));
+    });
+    block(c.steps, steps);
     block(c.extras, picked('extra').map(function (x) { return x.dataset.label; }));
     if (sum) {
       lines.push(sumText); lines.push('');
-      block(c.pay, picked('pay').map(function (x) { return x.value; }));
+      if (half) { lines.push(c.half); lines.push(''); }
     }
-    block(c.trade, picked('trade').map(function (x) { return x.dataset.label; }));
     var ans = [];
     form.querySelectorAll('fieldset.q').forEach(function (fs) {
       var k = fs.dataset.q;
@@ -164,8 +167,6 @@
       if (a.length || note.length) ans.push(fs.dataset.text + ' ' + a.concat(note).join('; '));
     });
     block(c.answers, ans);
-    var g = form.elements.groups.value.trim();
-    if (g) block(c.groups, [g]);
     var n = form.elements.name.value.trim();
     if (n) lines.push(n);
     var text = lines.join('\n').trim();

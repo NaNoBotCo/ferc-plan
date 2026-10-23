@@ -565,6 +565,71 @@ for _lang, _metas in STEPMETA.items():
     for _step, _meta in zip(WORDS[_lang]["steps"], _metas):
         _step.update(_meta)
 
+# Words for the simple page: five cards that each carry their own choice, then extras, three questions, send.
+SIMPLE = {
+    "en": {
+        "h1s": "More donations for FERC",
+        "leds": ["We help FERC get more donations.", "Steps 1 to 4 are free for FERC.", "FERC’s board decides on 31 October."],
+        "start": "Start",
+        "steps_h": "Five steps",
+        "steps_p": "Read each step. Tap ✓ Yes, ✗ No or ? Talk first.",
+        "dec": ["✓ Yes", "✗ No", "? Talk first"],
+        "sub": [
+            "A clear way to give from each country, and help leaving Myriad.",
+            "Move the newsletter to Brevo, free for more than 500 people.",
+            "A new website with the school map. Choose A or B.",
+            "Posts, a short video and free Google ads for FERC.",
+            "One list instead of two, so sponsor reports take less work.",
+        ],
+        "costs": ["Free", "Free", "Free", "Free", "Price in January"],
+        "when_i": "When",
+        "cost_i": "Cost",
+        "more_s": "More",
+        "ex_s": "Extras (optional)",
+        "ex_s_p": "Extra work, with prices for FERC in Thai baht.",
+        "half": "We would like to pay up to half in trade (for example, a thank-you line on fercthailand.org).",
+        "half_mail": "Up to half in trade",
+        "intro_line": "If you introduce someone who hires us, FERC gets 20% of what they pay us in their first year.",
+        "others_line": "Other Chiang Mai groups can get a giving page like FERC’s: ฿30,000 to set up, then ฿10,000 a month.",
+        "q3_h": "Three questions",
+        "send_h": "Send",
+        "steps_mail": "Steps",
+        "about_h": "Who we are",
+    },
+    "de": {
+        "h1s": "Mehr Spenden für FERC",
+        "leds": ["Wir helfen FERC, mehr Spenden zu bekommen.", "Die Schritte 1 bis 4 sind für FERC gratis.", "Der Vorstand von FERC entscheidet am 31. Oktober."],
+        "start": "Los",
+        "steps_h": "Fünf Schritte",
+        "steps_p": "Lesen Sie jeden Schritt. Tippen Sie auf ✓ Ja, ✗ Nein oder ? Zuerst sprechen.",
+        "dec": ["✓ Ja", "✗ Nein", "? Zuerst sprechen"],
+        "sub": [
+            "Ein klarer Weg zu spenden aus jedem Land, und Hilfe beim Ausstieg bei Myriad.",
+            "Den Newsletter zu Brevo übertragen, gratis für mehr als 500 Personen.",
+            "Eine neue Website mit der Schulkarte. A oder B wählen.",
+            "Beiträge, ein kurzes Video und Gratis-Werbung bei Google für FERC.",
+            "Eine Liste statt zwei, damit Patenberichte weniger Arbeit machen.",
+        ],
+        "costs": ["Gratis", "Gratis", "Gratis", "Gratis", "Preis im Januar"],
+        "when_i": "Wann",
+        "cost_i": "Kosten",
+        "more_s": "Mehr",
+        "ex_s": "Zusatzleistungen (freiwillig)",
+        "ex_s_p": "Zusätzliche Arbeit, mit Preisen für FERC in thailändischen Baht.",
+        "half": "Wir möchten bis zur Hälfte mit Gegenleistungen bezahlen (zum Beispiel eine Dankeszeile auf fercthailand.org).",
+        "half_mail": "Bis zur Hälfte mit Gegenleistungen",
+        "intro_line": "Wenn Sie uns jemanden vorstellen, der uns einen Auftrag gibt, erhält FERC 20 % von dem, was er uns im ersten Jahr bezahlt.",
+        "others_line": "Andere Gruppen in Chiang Mai können eine Spendenseite wie die von FERC bekommen: 30’000 Baht für die Einrichtung, dann 10’000 Baht pro Monat.",
+        "q3_h": "Drei Fragen",
+        "send_h": "Senden",
+        "steps_mail": "Schritte",
+        "about_h": "Wer wir sind",
+    },
+}
+for _lang, _w in SIMPLE.items():
+    WORDS[_lang].update(_w)
+Q3 = ("map", "treasurer", "host")
+
 SOURCES = [
     ("CAF America: Friends Funds", "https://cafamerica.org/friends-funds/"),
     ("DFAT: Overseas Aid Gift Deduction Scheme", "https://www.dfat.gov.au/development/who-we-work-with/ngos/oagds"),
@@ -729,6 +794,8 @@ def plan_items(w):
 def questions(w):
     out = []
     for key, q, kind, opts, note in w["qa"]:
+        if key not in Q3:
+            continue
         typ = "radio" if kind == "one" else "checkbox"
         items = "".join(
             f'<label class="pick chip"><input type="{typ}" name="q-{key}" value="{e(o)}"> <span>{e(o)}</span></label>'
@@ -738,114 +805,117 @@ def questions(w):
     return "".join(out)
 
 
-def chooser(w):
+def card(w, i, s):
+    n = i + 1
+    label = f'{n} {s["icon"]} {s["short"]}'
+    head_ = (f'<div class="hrow"><p class="of">{e(w["step_of"].format(n=n))}</p>{readbtn(w)}</div>'
+             f'<h3 id="c{n}-h">{step_name(n, s)}</h3><p class="sub">{e(w["sub"][i])}</p>')
+    facts = (f'<p class="meta"><span>{ico("📅")} <b>{e(w["when_i"])}:</b> {e(s["when"])}</span>'
+             + (f'<span>{ico("💰")} <b>{e(w["cost_i"])}:</b> {e(w["costs"][i])}</span>' if "ab" not in s else "")
+             + "</p>")
+    if "ab" in s:
+        opts = "".join(
+            f'<label class="pick card{" rec" if code == "B" else ""}"><input type="radio" name="web" value="3{code}" data-label="{e("3" + code + " " + short)}">'
+            f' <span><b>{n}{code}</b> {e(title)}<i class="needs">{e(text)}</i><i class="needs">{ico("💰")} {e(cost)}</i></span></label>'
+            for code, short, title, text, cost in s["ab"])
+        opts += f'<label class="pick chip"><input type="radio" name="web" value="talk" data-label="{e(w["dec"][2])}"> <span>{e(w["dec"][2])}</span></label>'
+        decide = f'<fieldset class="decide" data-step="{e(label)}"><legend class="vh">{e(label)}</legend>{opts}</fieldset><p class="ask">{e(s["rec"])}</p>'
+    else:
+        decide = (f'<fieldset class="decide" data-step="{e(label)}"><legend class="vh">{e(label)}</legend><div class="chips">'
+                  + "".join(f'<label class="pick chip"><input type="radio" name="d-{n}" value="{e(d)}"> <span>{e(d)}</span></label>' for d in w["dec"])
+                  + "</div></fieldset>")
+    more = [ul(s["core"], "core")]
+    dl = "".join(f"<div><dt>{e(w[k])}</dt><dd>{e(s[k])}</dd></div>" for k in ("we", "you", "cost") if k in s and not (k == "cost" and "ab" in s))
+    more.append(f'<dl class="facts">{dl}</dl>')
+    if s.get("p"):
+        more.append(f"<p>{e(s['p'])}</p>")
+    if "table" in s:
+        more.append('<table class="routes"><tbody>' + "".join(f'<tr><th scope="row">{e(a)}</th><td>{e(b)}</td></tr>' for a, b in s["table"]) + "</tbody></table>")
+    if "list" in s:
+        more.append(ul(s["list"], ""))
+    if "map" in s:
+        more.append(f'<p><a class="btn" href="{MAP}">{e(s["map"])} →</a></p>')
+    if s.get("p2"):
+        more.append(f"<p>{e(s['p2'])}</p>")
+    return (f'<li class="step" id="step{n}"><section aria-labelledby="c{n}-h">{head_}{facts}{decide}'
+            f'<details><summary>{e(w["more_s"])}</summary>{"".join(more)}</details></section></li>')
+
+
+def page(w, rel, path):
     st = w["steps"]
-    steps = "".join(
-        f'<label class="pick"><input type="checkbox" name="step" value="{n}" data-label="{e(n + " " + s["icon"] + " " + s["short"])}"> <span>{step_name(n, s)}</span></label>'
-        for n, short, s in plan_items(w) if not n.startswith("3")
-    )
-    web = "".join(
-        f'<label class="pick card{" rec" if code == "B" else ""}"><input type="radio" name="web" value="3{code}" data-label="{e("3" + code + " " + short)}"> <span><b>3{code}</b> {e(title)}<i class="needs">{e(cost)}</i></span></label>'
-        for code, short, title, _, cost in st[2]["ab"]
-    ) + f'<label class="pick"><input type="radio" name="web" value="talk" data-label="3 {e(w["ch_web_talk"])}"> <span>{e(w["ch_web_talk"])}</span></label>'
-    s5 = f'<label class="pick"><input type="checkbox" name="step" value="5" data-label="{e(w["ch_step5"])}"> <span>{e(w["ch_step5"])}</span></label>'
+    cards = "".join(card(w, i, s) for i, s in enumerate(st))
 
     def extra_pick(k, o, m):
         needs = ' data-needs="3A"' if k == "wpcare" else ""
         note = f'<i class="needs lock">{e(w["ch_wp_only"])}</i>' if k == "wpcare" else ""
-        name = w["extras"][k][0]
+        name, what = w["extras"][k]
         label = e(name + " (" + price(w, o, m) + ")")
         return (f'<label class="pick"><input type="checkbox" name="extra" value="{k}" data-once="{o}" data-month="{m}"{needs} data-label="{label}">'
-                f' <span>{e(name)} <b class="pr">{e(price(w, o, m))}</b>{note}</span></label>')
+                f' <span><b>{e(name)}</b> <b class="pr">{e(price(w, o, m))}</b><i class="needs">{e(what)}</i>{note}</span></label>')
     extras = "".join(extra_pick(k, o, m) for k, o, m in EXTRAS)
-    pay = "".join(
-        f'<label class="pick"><input type="radio" name="pay" value="{e(p)}"> <span>{e(p)}</span></label>'
-        for p in w["pay"]
-    )
-    trades = "".join(
-        f'<label class="pick"><input type="checkbox" name="trade" value="{k}" data-label="{e(t)}"> <span>{e(t)}</span></label>'
-        for k, t in w["trades"].items()
-    )
+    intro = mailto("", w["intro_subject"], w["intro_body"], cc=MAIL)
     cfg = json.dumps({
-        "to": MAIL, "subject": w["ch_subject"], "head": w["ch_msg_h"],
-        "plan": w["ch_plan"], "extras": w["ch_extras"], "pay": w["ch_pay"], "trade": w["ch_trade"],
-        "groups": w["ch_groups"], "name": w["ch_name"], "total": w["ch_total"], "none": w["ch_none"],
+        "to": MAIL, "subject": w["ch_subject"], "head": w["ch_msg_h"], "steps": w["steps_mail"],
+        "extras": w["ch_extras"], "name": w["ch_name"], "total": w["ch_total"], "none": w["ch_none"],
         "once": w["once"], "month": w["month"], "copied": w["ch_copied"],
         "and": w["ch_and"], "money": w["ch_money"], "de": w["lang"].startswith("de"),
-        "half": w["pay"][1], "web": w["ch_web"], "answers": w["q_answers"],
+        "half": w["half_mail"], "answers": w["q_answers"],
     }, ensure_ascii=False)
-    return f"""<p>{e(w['ch_p'])}</p>
-<form id="chooser" action="#choose" onsubmit="return false" data-cfg="{e(cfg)}">
-  <fieldset><legend>{e(w['ch_plan'])}</legend>{steps}</fieldset>
-  <fieldset><legend>{e(w['ch_web'])}</legend>{web}</fieldset>
-  <fieldset><legend>{e(w['ch_step5'].split(':')[0])}</legend>{s5}</fieldset>
-  <fieldset><legend>➕ {e(w['ch_extras'])}</legend>{extras}</fieldset>
-  <fieldset><legend>{e(w['ch_pay'])}</legend>{pay}</fieldset>
-  <fieldset><legend>🤝 {e(w['ch_trade'])}</legend>{trades}</fieldset>
-  <h3 class="qh">❓ {e(w['q_h'])}</h3>
-  <p>{e(w['q_p'])}</p>
-  {questions(w)}
-  <label class="field">🏘️ {e(w['ch_groups'])}<textarea name="groups" rows="2"></textarea></label>
-  <label class="field">{e(w['ch_name'])}<input type="text" name="name" autocomplete="name"></label>
-  <p class="total" id="total" aria-live="polite">{e(w['ch_total'])}: {e(w['ch_none'])}</p>
-  <div class="preview"><p class="pv-h">{e(w['pv_h'])}</p><p class="pv-to">{e(w['pv_to'])}: {MAIL}<br>{e(w['pv_subject'])}: {e(w['ch_subject'])}</p><pre id="pv"></pre></div>
-  <p class="help">{e(w['ch_help'])}</p>
-  <p class="sendrow"><a class="cta send" id="send" href="mailto:{MAIL}">✉️ {e(w['ch_send'])}</a> <button class="btn send" type="button" id="copy">📋 {e(w['ch_copy'])}</button></p>
-  <p class="small-ink" id="copied" aria-live="polite"></p>
-</form>
-"""
-
-
-def page(w, rel, path):
-    told = ul(w["told"])
-    st = w["steps"]
-    steps = "".join(step_html(w, i + 1, s) for i, s in enumerate(st))
-    time = '<ol class="time">' + "".join(f'<li><span class="d">{e(a)}</span> <span>{e(b)}</span></li>' for a, b in w["time"]) + "</ol>"
-    lede = "".join(f'<p class="lede">{e(x)}</p>' for x in w["lede"])
-    who = "".join(f"<p>{e(x)}</p>" for x in w["who"]) + f'<p class="row"><a class="btn" href="{DESK}">{e(w["desk_btn"])} →</a> <a class="btn" href="mailto:{MAIL}?subject=FERC">{e(w["write"])}: {MAIL}</a></p>'
-    extras = '<ul class="extras">' + "".join(
-        f'<li><h3>{e(w["extras"][k][0])}</h3><p class="pr">{e(price(w, o, m))}</p><p>{e(w["extras"][k][1])}</p></li>'
-        for k, o, m in EXTRAS
-    ) + "</ul>"
-    trade = f"<p>{e(w['tr_p'])}</p>" + ul(w["trades"].values()) + f"<p>{e(w['tr_note'])}</p>"
-    intro = mailto("", w["intro_subject"], w["intro_body"], cc=MAIL)
-    comm = "".join(f"<p>{e(x)}</p>" for x in w["co"]) + f'<p class="row"><a class="btn" href="{e(intro)}">✉️ {e(w["intro_btn"])}</a> <a class="btn" href="{DESK}">{e(w["desk_btn"])}</a></p>'
-    nav = [(f"#step{i+1}", step_name(i + 1, s)) for i, s in enumerate(st)] + [
-        ("#extras", f'{ico("➕")} {e(w["nav_extras"])}'),
-        ("#trade", f'{ico("🤝")} {e(w["nav_trade"])}'),
-        ("#community", f'{ico("🏘️")} {e(w["nav_co"])}'),
-        ("#choose", f'{ico("✅")} {e(w["nav_choose"])}'),
-    ]
-    navhtml = f'<nav class="toc" aria-labelledby="toc-h"><div class="wrap"><h2 id="toc-h">{e(w["nav_h"])}</h2><ul>' + "".join(f'<li><a href="{h}">{t}</a></li>' for h, t in nav) + "</ul></div></nav>"
+    who = "".join(f"<p>{e(x)}</p>" for x in w["who"]) + f'<p class="row"><a class="btn" href="{DESK}">{e(w["desk_btn"])} →</a></p>'
+    src = "".join(f'<li><a href="{u}">{e(t)}</a></li>' for t, u in SOURCES)
+    ph = " · ".join(f'{e(w[k])}: <a href="{u}">Wikimedia Commons</a>, <a href="{lu}">{e(l)}</a>' for k, u, l, lu in PHOTOS)
+    lede = "".join(f'<p class="lede">{e(x)}</p>' for x in w["leds"])
     return head(w, rel, w["title"], path) + f"""
 <header class="band hero" style="background-image:url({rel}img/road.jpg)">
   <p class="kick">{e(w['kick'])}</p>
   <section class="in" aria-labelledby="h1">
-    <div class="hrow"><h1 id="h1">{e(w['h1'])}</h1></div>
-    <p class="row"><a class="cta light" href="#choose">✅ {e(w['go_choose'])}</a> <a class="cta ghost" href="board/">🖨️ {e(w['board_btn'])}</a></p>
+    <h1 id="h1">{e(w['h1s'])}</h1>
     {lede}
-    <p class="row">{readbtn(w)}</p>
+    <p class="row"><a class="cta light" href="#steps">↓ {e(w['start'])}</a> <a class="cta ghost" href="board/">🖨️ {e(w['board_btn'])}</a> {readbtn(w)}</p>
   </section>
   <p class="cred">{e(w['road'])}</p>
 </header>
 <main>
-{navhtml}
-{sec("who", e(w["who_h"]), who, w)}
-{sec("told", e(w["told_h"]), told, w, "sec alt")}
-{sec("when", e(w["time_h"]), time, w)}
-<section class="sec" id="plan" aria-labelledby="plan-h"><div class="wrap">
-  <h2 id="plan-h">{e(w['plan_h'])}</h2>
-  <ol class="steps">{steps}</ol>
+<form id="chooser" action="#send" onsubmit="return false" data-cfg="{e(cfg)}">
+<section class="sec" id="steps" aria-labelledby="steps-h"><div class="wrap" id="plan">
+  <h2 id="steps-h">{e(w['steps_h'])}</h2>
+  <p>{e(w['steps_p'])}</p>
+  <ol class="steps">{cards}</ol>
 </div></section>
-<div class="band short" style="background-image:url({rel}img/dao.jpg);background-position:center 40%" role="img" aria-label="{e(w['dao'])}"><p class="cred">{e(w['dao'])}</p></div>
-{sec("extras", ico("➕") + " " + e(w["ex_h"]), f"<p>{e(w['ex_p'])}</p>" + extras, w)}
-{sec("trade", ico("🤝") + " " + e(w["tr_h"]), trade, w, "sec alt")}
-{sec("community", ico("🏘️") + " " + e(w["co_h"]), comm, w)}
-{sec("choose", ico("✅") + " " + e(w["ch_h"]), chooser(w), w, "sec alt choose")}
-{sec("privacy", e(w["priv_h"]), ul(w["priv"]), w)}
+<section class="sec alt" id="extras" aria-labelledby="extras-h"><div class="wrap">
+  <details class="big"><summary><h2 id="extras-h">{ico("➕")} {e(w['ex_s'])}</h2></summary>
+    <p>{e(w['ex_s_p'])}</p>
+    {extras}
+    <label class="pick"><input type="checkbox" name="half"> <span>{ico("🤝")} {e(w['half'])}</span></label>
+    <p>{ico("🏘️")} {e(w['intro_line'])}</p>
+    <p class="row"><a class="btn" href="{e(intro)}">✉️ {e(w['intro_btn'])}</a></p>
+    <p>{e(w['others_line'])}</p>
+  </details>
+</div></section>
+<section class="sec" id="questions" aria-labelledby="q-h"><div class="wrap">
+  <div class="hrow"><h2 id="q-h">{ico("❓")} {e(w['q3_h'])}</h2>{readbtn(w)}</div>
+  {questions(w)}
+</div></section>
+<section class="sec alt" id="send" aria-labelledby="send-h"><div class="wrap">
+  <div class="hrow"><h2 id="send-h">{ico("✉️")} {e(w['send_h'])}</h2>{readbtn(w)}</div>
+  <label class="field">{e(w['ch_name'])}<input type="text" name="name" autocomplete="name"></label>
+  <p class="total" id="total" aria-live="polite">{e(w['ch_total'])}: {e(w['ch_none'])}</p>
+  <div class="preview"><p class="pv-h">{e(w['pv_h'])}</p><p class="pv-to">{e(w['pv_to'])}: {MAIL}<br>{e(w['pv_subject'])}: {e(w['ch_subject'])}</p><pre id="pv"></pre></div>
+  <p class="help">{e(w['ch_help'])}</p>
+  <p class="sendrow"><a class="cta send" id="sendbtn" href="mailto:{MAIL}">✉️ {e(w['ch_send'])}</a> <button class="btn send" type="button" id="copy">📋 {e(w['ch_copy'])}</button></p>
+  <p class="small-ink" id="copied" aria-live="polite"></p>
+</div></section>
+</form>
+<section class="sec" id="about" aria-label="{e(w['about_h'])}"><div class="wrap">
+  <details><summary>{e(w['about_h'])}</summary>{who}</details>
+  <details><summary>{e(w['priv_h'])}</summary>{ul(w["priv"], "")}</details>
+  <details><summary>{e(w['src_h'])}</summary><ul class="small">{src}</ul><p class="small">{e(w['photos'])}. {ph}</p></details>
+</div></section>
 </main>
-<a class="float" id="float" href="#choose">✅ {e(w['float'])}</a>
-""" + foot(w, rel)
+<script src="{rel}app.js"></script>
+</body>
+</html>
+"""
 
 
 def board(w, rel, path):
