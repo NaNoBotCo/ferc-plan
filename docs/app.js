@@ -62,18 +62,27 @@
   if (!form) return;
   var c = JSON.parse(form.dataset.cfg);
   var send = document.getElementById('send'), total = document.getElementById('total');
-  var fmt = function (n) { return '฿' + n.toLocaleString('en-US'); };
+  var fmt = function (n) {
+    var t = n.toLocaleString('en-US');
+    return c.de ? t.replace(/,/g, '\u2019') + ' Baht' : '\u0e3f' + t;
+  };
   function picked(name) {
     return Array.prototype.filter.call(form.querySelectorAll('input[name="' + name + '"]'), function (x) { return x.checked; });
   }
   function build() {
     var once = 0, month = 0;
     picked('extra').forEach(function (x) { once += +x.dataset.once; month += +x.dataset.month; });
-    var sum = [];
-    if (once) sum.push(fmt(once) + ' ' + c.once);
-    if (month) sum.push(fmt(month) + ' ' + c.month);
-    var sumText = c.total + ': ' + (sum.length ? sum.join(' · ') : c.none);
+    function both(o, m) {
+      var parts = [];
+      if (o) parts.push(fmt(o) + ' ' + c.once);
+      if (m) parts.push(fmt(m) + ' ' + c.month);
+      return parts.join(' ' + c.and + ' ');
+    }
+    var half = picked('pay').some(function (x) { return x.value === c.half; });
+    var sumText = c.total + ': ' + (once || month ? both(once, month) : c.none);
+    if ((once || month) && half) sumText += '. ' + c.money + ': ' + both(once / 2, month / 2);
     total.textContent = sumText;
+    var sum = once || month;
     var lines = [c.head, ''];
     function block(title, items) {
       if (!items.length) return;
@@ -83,8 +92,10 @@
     }
     block(c.plan, picked('step').map(function (x) { return x.dataset.label; }));
     block(c.extras, picked('extra').map(function (x) { return x.dataset.label; }));
-    if (sum.length) { lines.push(sumText); lines.push(''); }
-    block(c.pay, picked('pay').map(function (x) { return x.value; }));
+    if (sum) {
+      lines.push(sumText); lines.push('');
+      block(c.pay, picked('pay').map(function (x) { return x.value; }));
+    }
     block(c.trade, picked('trade').map(function (x) { return x.dataset.label; }));
     var g = form.elements.groups.value.trim();
     if (g) block(c.groups, [g]);
@@ -94,8 +105,11 @@
     send.href = 'mailto:' + c.to + '?subject=' + encodeURIComponent(c.subject) + '&body=' + encodeURIComponent(text);
     return text;
   }
-  form.addEventListener('change', build);
-  form.addEventListener('input', build);
+  var copied = document.getElementById('copied');
+  function changed() { copied.textContent = ''; build(); }
+  form.addEventListener('change', changed);
+  form.addEventListener('input', changed);
+  form.addEventListener('submit', function (ev) { ev.preventDefault(); });
   build();
   document.getElementById('copy').addEventListener('click', function () {
     var text = build(), out = document.getElementById('copied');
