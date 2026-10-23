@@ -173,3 +173,4 @@ details[open] summary::after{content:"▴"}
 .speaking *{color:#141414!important}
 .board .opts{font-weight:400;display:inline-block;margin-top:.3rem}
 @media screen{.boardpage .box{display:none}}
+body{padding-bottom:5rem}
