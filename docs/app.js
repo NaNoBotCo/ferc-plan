@@ -27,7 +27,7 @@
   if (fl && ch && 'IntersectionObserver' in window) {
     new IntersectionObserver(function (es) {
       fl.classList.toggle('hide', es[0].isIntersecting);
-    }, { threshold: 0.05 }).observe(ch);
+    }, { threshold: 0 }).observe(ch);
   }
 })();
 
