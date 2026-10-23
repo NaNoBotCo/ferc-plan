@@ -24,7 +24,7 @@ WORDS = {
         "theme": "Light or dark",
         "read": "Read aloud",
         "stop": "Stop",
-        "kick": "For Eveline Willi and Heinz · Monday 27 October 2026",
+        "kick": "For Eveline Willi and Heinz",
         "h1": "More gifts for FERC by 29 November",
         "lede": "A plan in five steps. You approve; we do the work. Steps 1, 2 and 4 fit before your talk on 28 November and the fundraiser on 29 November. The website and the reports wait for January, when you have more time.",
         "board_btn": "One page for the board",
@@ -62,7 +62,7 @@ WORDS = {
             },
             {
                 "h": "A newsletter list with room to grow",
-                "p": "MailPoet’s free plan stops at 500 contacts. Brevo’s free plan has no contact limit and sends 300 emails a day, so a 500-person newsletter goes out over two days. The free plan shows a small Brevo logo.",
+                "p": "MailPoet’s free plan stops at 500 contacts. Brevo’s free plan has no contact limit and sends 300 emails a day. A 500-person newsletter goes to the first 300 on day one; the next day, one click in Brevo sends the rest. The free plan shows a small Brevo logo.",
                 "we": "Move the list to Brevo, unsubscribes included. Make a FERC newsletter template and a signup form on fercthailand.org. Write a one-page guide.",
                 "you": "Approve, then send newsletters yourself.",
                 "when": "November",
@@ -167,7 +167,7 @@ WORDS = {
         "theme": "Hell oder dunkel",
         "read": "Vorlesen",
         "stop": "Stopp",
-        "kick": "Für Eveline Willi und Heinz · Montag, 27. Oktober 2026",
+        "kick": "Für Eveline Willi und Heinz",
         "h1": "Mehr Spenden für FERC bis zum 29. November",
         "lede": "Ein Plan in fünf Schritten. Sie geben das Okay; wir machen die Arbeit. Die Schritte 1, 2 und 4 passen vor Ihren Vortrag am 28. November und den Spendenanlass am 29. November. Die Website und die Berichte warten bis Januar, wenn Sie mehr Zeit haben.",
         "board_btn": "Eine Seite für den Vorstand",
@@ -205,7 +205,7 @@ WORDS = {
             },
             {
                 "h": "Eine Newsletter-Liste mit Platz zum Wachsen",
-                "p": "Der Gratis-Plan von MailPoet endet bei 500 Kontakten. Der Gratis-Plan von Brevo hat keine Kontaktgrenze und verschickt 300 E-Mails pro Tag; ein Newsletter an 500 Personen geht also über zwei Tage hinaus. Im Gratis-Plan steht ein kleines Brevo-Logo.",
+                "p": "Der Gratis-Plan von MailPoet endet bei 500 Kontakten. Der Gratis-Plan von Brevo hat keine Kontaktgrenze und verschickt 300 E-Mails pro Tag. Ein Newsletter an 500 Personen geht am ersten Tag an 300; am nächsten Tag schickt ein Klick in Brevo den Rest. Im Gratis-Plan steht ein kleines Brevo-Logo.",
                 "we": "Die Liste zu Brevo umziehen, mit allen Abmeldungen. Eine FERC-Vorlage und ein Anmeldeformular auf fercthailand.org machen. Eine Anleitung auf einer Seite schreiben.",
                 "you": "Das Okay geben, dann Newsletter selbst verschicken.",
                 "when": "November",
@@ -305,7 +305,8 @@ SOURCES = [
     ("CAF America: Friends Funds", "https://cafamerica.org/friends-funds/"),
     ("DFAT: Overseas Aid Gift Deduction Scheme", "https://www.dfat.gov.au/development/who-we-work-with/ngos/oagds"),
     ("Global Development Group (Australia)", "https://globaldevelopmentgroup.org/au/help/"),
-    ("THE STANDARD: donations to foundations through e-Donation from 1 January 2026", "https://thestandard.co/"),
+    ("THE STANDARD: donations to foundations through e-Donation from 1 January 2026", "https://thestandard.co/donation-tax-deduction-e-donation-2026/"),
+    ("Revenue Department: e-Donation", "https://www.rd.go.th/region/04/saraburi/85/6565.html"),
     ("Brevo pricing", "https://www.brevo.com/pricing/"),
     ("Google for Nonprofits: Ad Grants", "https://www.google.com/grants/"),
     ("Myriad USA (formerly King Baudouin Foundation United States)", "https://myriadusa.org/"),
@@ -470,7 +471,7 @@ def board(w, rel, path):
 
 def write(p, s):
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(s)
+    p.write_text(s, encoding="utf-8")
 
 
 write(DOCS / "index.html", page(WORDS["en"], "", ""))

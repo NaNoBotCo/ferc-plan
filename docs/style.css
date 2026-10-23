@@ -71,7 +71,7 @@ h3{font-size:1.25rem;line-height:1.25;margin:0 0 .6rem}
 @media (max-width:34rem){.board thead{display:none}.board tr{display:block;border-bottom:1px solid var(--line);padding:.4rem 0}.board th,.board td{display:block;border:0;padding:.15rem 0}}
 @media print{
   html,html.big{font-size:11pt}
-  :root{--bg:#fff;--ink:#000;--acc:#0b5a3c;--line:#999}
+  :root,:root[data-theme="dark"],:root:not([data-theme="light"]){--bg:#fff;--ink:#000;--soft:#333;--line:#999;--card:#fff;--acc:#0b5a3c;--acc-ink:#fff;--alt:#fff;color-scheme:light}
   .bar,.noprint,.skip,.read{display:none!important}
   .boardpage{max-width:none;padding:0}
   .board thead{display:table-header-group}

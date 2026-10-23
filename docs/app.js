@@ -45,7 +45,8 @@
       var sec = b.closest('section');
       var clone = sec.cloneNode(true);
       clone.querySelectorAll('.read').forEach(function (x) { x.remove(); });
-      var u = new SpeechSynthesisUtterance(clone.innerText.replace(/\s+/g, ' '));
+      clone.querySelectorAll('h2,h3,p,li,dt,dd,th,td').forEach(function (x) { x.append('. '); });
+      var u = new SpeechSynthesisUtterance(clone.textContent.replace(/\s+/g, ' ').replace(/(\.\s*){2,}/g, '. '));
       u.lang = lang; var v = pickVoice(); if (v) u.voice = v;
       u.rate = 0.9;
       u.onend = u.onerror = function () { if (current === b) stop(); };
