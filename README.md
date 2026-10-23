@@ -1,6 +1,6 @@
 # FERC · Giving season plan
 
-A minisite for Eveline Willi and Heinz (FERC), for the meeting on 27 October 2026 and the FERC board on 31 October. English and German (Swiss spelling), large print, read aloud, and one printable page for the board.
+A minisite for Eveline Willi and Heinz (FERC), for the meeting on 26 October 2026 and the FERC board on 31 October. English and German (Swiss spelling), large print, read aloud, a chooser that emails NaN, and one printable page for the board with boxes to tick.
 
 Live: https://nanobotco.github.io/ferc-plan/ (noindex)
 
