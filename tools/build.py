@@ -44,20 +44,19 @@ WORDS = {
         "h1": "More donations for FERC: a plan in five steps",
         "lede": [
             "Our work on steps 1 to 4 is free for FERC.",
-            "Steps 1, 2 and 4 start in November, before your talk (28 November) and the fundraiser (29 November). Steps 3 and 5 start in January.",
             "FERC’s board decides on 31 October. Then we do the work, and you say yes to each part.",
         ],
-        "go_choose": "Choose what FERC wants",
+        "go_choose": "Choose and send",
         "board_btn": "Page for the board",
         "road": "A hill road in Chiang Mai province",
         "who_h": "Who we are",
         "who": [
             "Hongdam is a small web company in Chiang Mai and Chiang Rai. We are six people: Thai, Burmese and American.",
             "We build websites and online tools in Thai and English, for companies, charities and clubs. We also run motdang.net, a guide to Chiang Mai.",
-            "For FERC we already made a giving page and a map of the 34 schools.",
+            "For FERC we already made a sample giving page and a map of the 34 schools.",
             "At the meeting: NaN (your contact), Marcus (Myat Kaung Thant) and Michael.",
         ],
-        "desk_btn": "See FERC’s giving page and map",
+        "desk_btn": "See the sample giving page and map",
         "write": "Write to NaN",
         "told_h": "You told us",
         "told": [
@@ -72,12 +71,12 @@ WORDS = {
         "time_h": "When",
         "time": [
             ("31 Oct", "FERC board meeting: yes or no"),
-            ("November", "Steps 1, 2 and 4"),
+            ("November", "1 🌍 Ways to give · 2 ✉️ Newsletter · 4 📣 More people see FERC"),
             ("28 Nov", "Your talk at the Expat Club"),
             ("29 Nov", "Fundraiser"),
             ("December", "Posts and newsletter for Christmas"),
-            ("January", "Steps 3 and 5 start"),
-            ("March", "New website and report tool ready, with a short guide"),
+            ("January", "3 🖥️ Website · 5 📋 Sponsor reports start"),
+            ("March", "3 🖥️ Website and 5 📋 report tool ready, with a short guide"),
         ],
         "plan_h": "The plan",
         "we": "We do",
@@ -104,7 +103,7 @@ WORDS = {
             {
                 "h": "A newsletter for more than 500 people",
                 "short": "Newsletter moved to Brevo",
-                "p": "MailPoet, your newsletter tool, is free up to 500 contacts, and FERC has reached 500. Brevo, another newsletter service, is free for more than 500 contacts. It sends 300 emails a day. So a newsletter to 500 people goes out over two days: 300 on the first day, the other 200 the next day with one more click. Free Brevo newsletters end with a small line, “Sent with Brevo”. (MailerLite, a similar service, now also stops at 500 free contacts.)",
+                "p": "MailPoet, your newsletter tool, is free up to 500 contacts, and FERC has reached 500. Brevo, another newsletter service, is free for more than 500 contacts. It sends 300 emails a day. So a newsletter to 500 people goes out over two days: 300 on the first day, the other 200 the next day with one more click. Free Brevo newsletters end with a small line, “Sent with Brevo”. (MailerLite, a similar service, is now free only up to 250 contacts.)",
                 "we": "Move the list to Brevo. People who unsubscribed stay unsubscribed. Make a FERC newsletter design and a sign-up form on fercthailand.org. Write a one-page guide. The first newsletter tells donors about the new ways to give from step 1.",
                 "you": "Say yes to the move. Then you send each newsletter. The guide shows how.",
                 "when": "November",
@@ -115,8 +114,8 @@ WORDS = {
                 "short": "Website refresh with the school map",
                 "p": "You can choose where the new website runs.",
                 "ab": [
-                    ("A", "Website on WordPress, as now", "Stay on WordPress", "We build the new look inside FERC’s WordPress. You and Heinz edit it as now. Most security holes in WordPress are in plugins (add-ons): in 2025, 11,334 new holes were found, 91% of them in plugins. Attackers often use a new hole within 5 hours. So a WordPress site needs updates every week: see the extra “WordPress care”."),
-                    ("B", "Website on a simpler system", "Move to a simpler website that we host", "Same address, fercthailand.org. Fewer parts to update, so less to keep safe. You change the words on the page itself, as on the practice copy of your giving page. We move the old pages and pictures across."),
+                    ("A", "Website on WordPress, as now", "Stay on WordPress", "We build the new look inside FERC’s WordPress. You and Heinz edit it as now. Most security holes in WordPress are in plugins (add-ons): in 2025, 11,334 new holes were found, 91% of them in plugins. Attackers often use a new hole within 5 hours. So a WordPress site needs updates every week: see the extra “WordPress care”.", "Our work: free. FERC pays for hosting, as now."),
+                    ("B", "Website on a simpler system", "Move to a simpler website that we host", "Same address, fercthailand.org. Fewer parts to update, so less to keep safe. You change the words on the page itself, as on the practice copy of your giving page. We move the old pages and pictures across.", "Our work: free. We host it at no charge today."),
                 ],
                 "rec": "We recommend B. If FERC prefers A, we build in WordPress.",  # stylecheck: allow — NaN asked for this recommendation (23 Oct)
                 "list": [
@@ -194,10 +193,28 @@ WORDS = {
         "intro_btn": "Introduce someone",
         "intro_subject": "An introduction: Hongdam",
         "intro_body": "Dear …,\n\nI would like to introduce NaN from Hongdam (copied here). They made FERC’s giving page and school map. I think they could help you with …\n\nIf you hire them, they give FERC 20% of what you pay them in the first year, for our students.\n\nBest wishes,\nEveline",
-        "ch_h": "Choose",
+        "ch_h": "Choose and send",
+        "nav_h": "On this page",
+        "nav_extras": "Extras",
+        "nav_trade": "Pay in trade",
+        "nav_co": "For all of Chiang Mai",
+        "nav_choose": "Choose and send",
+        "float": "Choose",
+        "step_of": "Step {n} of 5",
+        "more": "More about step {n}",
+        "pv_h": "Your email will say:",
+        "pv_to": "To",
+        "pv_subject": "Subject",
+        "board_screen": "Print this page to tick it with a pen, or choose on the website.",
+        "board_web": "Choose on the website",
+        "board_or": "Choose one:",
         "ch_p": "Tick what FERC wants. Nothing is ticked yet. The board decides on 31 October; you can send a first choice now and change it later.",
-        "ch_plan": "The plan (steps 1 to 4 are free)",
-        "ch_step5": "Step 5 in January: talk about it",
+        "ch_plan": "The plan: steps 1, 2 and 4 (free)",
+        "ch_step5": "5 📋 Sponsor reports: talk in January",
+        "ch_web": "3 🖥️ Website: choose one (free)",
+        "ch_web_talk": "Talk first",
+        "ch_wp_only": "🔒 Only with 3A, WordPress",
+        "board_one": "Choose one: 3A or 3B",
         "ch_extras": "Extras",
         "ch_pay": "How FERC pays for extras",
         "pay": ["Money", "Half money, half trade", "Talk first"],
@@ -210,7 +227,7 @@ WORDS = {
         "ch_money": "In money",
         "ch_send": "Send to NaN by email",
         "ch_copy": "Copy",
-        "ch_help": "This opens your email with your choices. Press Send there. No email program? Press Copy.",
+        "ch_help": "The button opens your email program with this text. Then press Send there. No email program? Press Copy and paste the text into any email to nan@motdang.net.",
         "ch_copied": "Copied. Paste it into an email to nan@motdang.net.",
         "ch_subject": "FERC: our choices",
         "ch_msg_h": "FERC’s choices",
@@ -220,14 +237,18 @@ WORDS = {
             "Students’ email, LINE and phone numbers stay off the website.",
             "Contact with schools and students goes through CMSEO, as now.",
         ],
-        "q_h": "Questions for Monday",
-        "q": [
-            "What did you think of the school map?",
-            "Leaving Myriad: what is hardest? The legal side, the bank, or telling donors?",
-            "May we ask the treasurer about e-Donation, and whether FERC wants card payments on the website?",
-            "Which company hosts the website?",
-            "Does FERC use Google for Nonprofits or Canva for Nonprofits (free tools for charities)?",
-            "Is there money for paid tools, or only free tools?",
+        "q_h": "Questions for you",
+        "q_p": "Tap an answer. Your answers go in the same email as your choices.",
+        "q_note": "Note (optional)",
+        "q_answers": "Answers",
+        "qa": [
+            ("map", "What did you think of the school map?", "one", ["✓ Good as it is", "✎ Good, with changes", "? Not seen yet"], True),
+            ("myriad", "Leaving Myriad: what is hardest?", "many", ["The legal side", "The bank", "Telling donors"], True),
+            ("treasurer", "May we ask the treasurer about e-Donation?", "one", ["✓ Yes, ask the treasurer", "I will ask", "✗ Not now"], False),
+            ("cards", "Does FERC want card payments on the website?", "one", ["✓ Yes", "✗ No", "? Not sure"], False),
+            ("host", "Which company hosts the website today?", "one", ["? I don’t know"], True),
+            ("tools", "Does FERC use these free tools for charities?", "many", ["Google for Nonprofits", "Canva for Nonprofits", "✗ Neither", "? I don’t know"], False),
+            ("budget", "Is there money for paid tools?", "one", ["Free tools only", "Some money", "The board decides"], False),
         ],
         "src_h": "Sources",
         "photos": "Photos by Takeaway, a Wikimedia Commons user",
@@ -256,20 +277,19 @@ WORDS = {
         "h1": "Mehr Spenden für FERC: ein Plan in fünf Schritten",
         "lede": [
             "Unsere Arbeit für die Schritte 1 bis 4 ist für FERC gratis.",
-            "Die Schritte 1, 2 und 4 beginnen im November, vor Ihrem Vortrag (28. November) und dem Spendenanlass (29. November). Die Schritte 3 und 5 beginnen im Januar.",
             "Der Vorstand von FERC entscheidet am 31. Oktober. Dann machen wir die Arbeit, und Sie sagen Ja zu jedem Teil.",
         ],
-        "go_choose": "Auswählen, was FERC möchte",
+        "go_choose": "Auswählen und senden",
         "board_btn": "Seite für den Vorstand",
         "road": "Eine Bergstrasse in der Provinz Chiang Mai",
         "who_h": "Wer wir sind",
         "who": [
             "Hongdam ist eine kleine Web-Firma in Chiang Mai und Chiang Rai. Wir sind sechs Personen: aus Thailand, Myanmar und den USA.",
             "Wir bauen Websites und Online-Werkzeuge auf Thai und Englisch, für Firmen, gemeinnützige Organisationen und Vereine. Wir betreiben auch motdang.net, einen Online-Stadtführer für Chiang Mai.",
-            "Für FERC haben wir schon eine Spendenseite und eine Karte der 34 Schulen gemacht.",
+            "Für FERC haben wir schon eine Muster-Spendenseite und eine Karte der 34 Schulen gemacht.",
             "Am Treffen: NaN (Ihre Ansprechperson), Marcus (Myat Kaung Thant) und Michael.",
         ],
-        "desk_btn": "Spendenseite und Karte von FERC ansehen",
+        "desk_btn": "Muster-Spendenseite und Karte ansehen",
         "write": "NaN schreiben",
         "told_h": "Was Sie uns gesagt haben",
         "told": [
@@ -284,12 +304,12 @@ WORDS = {
         "time_h": "Wann",
         "time": [
             ("31. Okt.", "Vorstandssitzung von FERC: Ja oder Nein"),
-            ("November", "Schritte 1, 2 und 4"),
+            ("November", "1 🌍 Wege zu spenden · 2 ✉️ Newsletter · 4 📣 Mehr Menschen sehen FERC"),
             ("28. Nov.", "Ihr Vortrag im Expat Club"),
             ("29. Nov.", "Spendenanlass"),
             ("Dezember", "Beiträge und Newsletter für Weihnachten"),
-            ("Januar", "Schritte 3 und 5 beginnen"),
-            ("März", "Neue Website und Berichts-Werkzeug bereit, mit einer kurzen Anleitung"),
+            ("Januar", "3 🖥️ Website · 5 📋 Patenberichte beginnen"),
+            ("März", "3 🖥️ Website und 5 📋 Berichts-Werkzeug bereit, mit einer kurzen Anleitung"),
         ],
         "plan_h": "Der Plan",
         "we": "Wir machen",
@@ -316,7 +336,7 @@ WORDS = {
             {
                 "h": "Newsletter für mehr als 500 Personen",
                 "short": "Newsletter zu Brevo",
-                "p": "MailPoet, Ihr Newsletter-Programm, ist bis 500 Kontakte gratis, und FERC hat 500 erreicht. Brevo, ein anderer Newsletter-Dienst, ist auch für mehr als 500 Kontakte gratis. Brevo verschickt 300 E-Mails pro Tag. Ein Newsletter an 500 Personen geht also über zwei Tage: 300 am ersten Tag, die anderen 200 am nächsten Tag mit einem weiteren Klick. In der Gratisversion endet jeder Newsletter mit einer kleinen Zeile «Sent with Brevo». (MailerLite, ein ähnlicher Dienst, ist jetzt auch nur bis 500 Kontakte gratis.)",
+                "p": "MailPoet, Ihr Newsletter-Programm, ist bis 500 Kontakte gratis, und FERC hat 500 erreicht. Brevo, ein anderer Newsletter-Dienst, ist auch für mehr als 500 Kontakte gratis. Brevo verschickt 300 E-Mails pro Tag. Ein Newsletter an 500 Personen geht also über zwei Tage: 300 am ersten Tag, die anderen 200 am nächsten Tag mit einem weiteren Klick. In der Gratisversion endet jeder Newsletter mit einer kleinen Zeile «Sent with Brevo». (MailerLite, ein ähnlicher Dienst, ist jetzt nur noch bis 250 Kontakte gratis.)",
                 "we": "Die Liste zu Brevo übertragen. Wer sich abgemeldet hat, bleibt abgemeldet. Ein FERC-Design für den Newsletter und ein Anmeldeformular auf fercthailand.org machen. Eine Anleitung auf einer Seite schreiben. Der erste Newsletter informiert die Spender über die neuen Wege aus Schritt 1.",
                 "you": "Ja sagen zum Umzug. Dann verschicken Sie jeden Newsletter selbst, mit Hilfe der Anleitung.",
                 "when": "November",
@@ -327,8 +347,8 @@ WORDS = {
                 "short": "Website erneuert, mit der Schulkarte",
                 "p": "Sie können wählen, wo die neue Website läuft.",
                 "ab": [
-                    ("A", "Website auf WordPress, wie heute", "Bei WordPress bleiben", "Wir bauen das neue Aussehen im WordPress von FERC. Sie und Heinz bearbeiten die Seite wie bisher. Die meisten Sicherheitslücken bei WordPress liegen in Plugins (Erweiterungen): 2025 wurden 11’334 neue Lücken gefunden, 91 % davon in Plugins. Angreifer nutzen eine neue Lücke oft innerhalb von 5 Stunden. Eine WordPress-Seite braucht deshalb jede Woche Updates: siehe die Zusatzleistung «WordPress-Pflege»."),
-                    ("B", "Website auf einem einfacheren System", "Zu einer einfacheren Website wechseln, die wir betreiben", "Gleiche Adresse, fercthailand.org. Weniger Teile zum Aktualisieren, also weniger zu schützen. Sie ändern die Texte direkt auf der Seite, wie in der Übungskopie Ihrer Spendenseite. Wir übertragen die alten Seiten und Bilder."),
+                    ("A", "Website auf WordPress, wie heute", "Bei WordPress bleiben", "Wir bauen das neue Aussehen im WordPress von FERC. Sie und Heinz bearbeiten die Seite wie bisher. Die meisten Sicherheitslücken bei WordPress liegen in Plugins (Erweiterungen): 2025 wurden 11’334 neue Lücken gefunden, 91 % davon in Plugins. Angreifer nutzen eine neue Lücke oft innerhalb von 5 Stunden. Eine WordPress-Seite braucht deshalb jede Woche Updates: siehe die Zusatzleistung «WordPress-Pflege».", "Unsere Arbeit: gratis. FERC bezahlt das Hosting wie heute."),
+                    ("B", "Website auf einem einfacheren System", "Zu einer einfacheren Website wechseln, die wir betreiben", "Gleiche Adresse, fercthailand.org. Weniger Teile zum Aktualisieren, also weniger zu schützen. Sie ändern die Texte direkt auf der Seite, wie in der Übungskopie Ihrer Spendenseite. Wir übertragen die alten Seiten und Bilder.", "Unsere Arbeit: gratis. Wir betreiben sie, heute ohne Kosten."),
                 ],
                 "rec": "Wir empfehlen B. Wenn FERC A lieber hat, bauen wir in WordPress.",
                 "list": [
@@ -406,10 +426,28 @@ WORDS = {
         "intro_btn": "Jemanden vorstellen",
         "intro_subject": "Eine Empfehlung: Hongdam",
         "intro_body": "Liebe/r …\n\nIch möchte Ihnen NaN von Hongdam vorstellen (in Kopie). Hongdam hat die Spendenseite und die Schulkarte von FERC gemacht. Ich glaube, Hongdam könnte Ihnen helfen bei …\n\nWenn Sie mit Hongdam zusammenarbeiten, erhält FERC 20 % von dem, was Sie Hongdam im ersten Jahr bezahlen, für unsere Schüler.\n\nHerzliche Grüsse\nEveline",
-        "ch_h": "Auswählen",
+        "ch_h": "Auswählen und senden",
+        "nav_h": "Auf dieser Seite",
+        "nav_extras": "Zusatzleistungen",
+        "nav_trade": "Mit Gegenleistungen bezahlen",
+        "nav_co": "Für ganz Chiang Mai",
+        "nav_choose": "Auswählen und senden",
+        "float": "Auswählen",
+        "step_of": "Schritt {n} von 5",
+        "more": "Mehr zu Schritt {n}",
+        "pv_h": "Ihre E-Mail lautet:",
+        "pv_to": "An",
+        "pv_subject": "Betreff",
+        "board_screen": "Drucken Sie diese Seite, um mit dem Stift anzukreuzen, oder wählen Sie auf der Website.",
+        "board_web": "Auf der Website auswählen",
+        "board_or": "Eines wählen:",
         "ch_p": "Kreuzen Sie an, was FERC möchte. Noch ist nichts angekreuzt. Der Vorstand entscheidet am 31. Oktober; Sie können jetzt eine erste Wahl schicken und sie später ändern.",
-        "ch_plan": "Der Plan (Schritte 1 bis 4 gratis)",
-        "ch_step5": "Schritt 5 im Januar: darüber sprechen",
+        "ch_plan": "Der Plan: Schritte 1, 2 und 4 (gratis)",
+        "ch_step5": "5 📋 Patenberichte: im Januar besprechen",
+        "ch_web": "3 🖥️ Website: eines wählen (gratis)",
+        "ch_web_talk": "Zuerst sprechen",
+        "ch_wp_only": "🔒 Nur mit 3A, WordPress",
+        "board_one": "Eines wählen: 3A oder 3B",
         "ch_extras": "Zusatzleistungen",
         "ch_pay": "Wie FERC die Zusatzleistungen bezahlt",
         "pay": ["Geld", "Halb Geld, halb Gegenleistung", "Zuerst sprechen"],
@@ -422,7 +460,7 @@ WORDS = {
         "ch_money": "Davon in Geld",
         "ch_send": "Per E-Mail an NaN schicken",
         "ch_copy": "Kopieren",
-        "ch_help": "Damit öffnet sich Ihr E-Mail-Programm mit Ihrer Wahl. Drücken Sie dort auf Senden. Kein E-Mail-Programm? Drücken Sie Kopieren.",
+        "ch_help": "Der Knopf öffnet Ihr E-Mail-Programm mit diesem Text. Drücken Sie dort auf Senden. Kein E-Mail-Programm? Drücken Sie Kopieren und fügen Sie den Text in eine E-Mail an nan@motdang.net ein.",
         "ch_copied": "Kopiert. Fügen Sie es in eine E-Mail an nan@motdang.net ein.",
         "ch_subject": "FERC: unsere Wahl",
         "ch_msg_h": "Die Wahl von FERC",
@@ -432,14 +470,18 @@ WORDS = {
             "E-Mail, LINE und Telefonnummern der Schüler stehen nicht auf der Website.",
             "Kontakt mit Schulen und Schülern läuft über das CMSEO, wie heute.",
         ],
-        "q_h": "Fragen für Montag",
-        "q": [
-            "Wie hat Ihnen die Schulkarte gefallen?",
-            "Ausstieg bei Myriad: Was ist am schwierigsten? Das Rechtliche, die Bank oder die Information an die Spender?",
-            "Dürfen wir den Kassier zu e-Donation fragen, und ob FERC Kartenzahlungen auf der Website möchte?",
-            "Welche Firma betreibt die Website (Hosting)?",
-            "Nutzt FERC Google for Nonprofits oder Canva for Nonprofits (Gratis-Werkzeuge für gemeinnützige Organisationen)?",
-            "Gibt es Geld für bezahlte Programme, oder nur für Gratis-Programme?",
+        "q_h": "Fragen an Sie",
+        "q_p": "Tippen Sie auf eine Antwort. Ihre Antworten gehen in die gleiche E-Mail wie Ihre Wahl.",
+        "q_note": "Notiz (freiwillig)",
+        "q_answers": "Antworten",
+        "qa": [
+            ("map", "Wie hat Ihnen die Schulkarte gefallen?", "one", ["✓ Gut so", "✎ Gut, mit Änderungen", "? Noch nicht gesehen"], True),
+            ("myriad", "Ausstieg bei Myriad: Was ist am schwierigsten?", "many", ["Das Rechtliche", "Die Bank", "Die Information an die Spender"], True),
+            ("treasurer", "Dürfen wir den Kassier zu e-Donation fragen?", "one", ["✓ Ja, fragen Sie den Kassier", "Ich frage selbst", "✗ Jetzt nicht"], False),
+            ("cards", "Möchte FERC Kartenzahlungen auf der Website?", "one", ["✓ Ja", "✗ Nein", "? Weiss nicht"], False),
+            ("host", "Bei welcher Firma ist die Website heute gehostet?", "one", ["? Weiss nicht"], True),
+            ("tools", "Nutzt FERC diese Gratis-Werkzeuge für gemeinnützige Organisationen?", "many", ["Google for Nonprofits", "Canva for Nonprofits", "✗ Keines", "? Weiss nicht"], False),
+            ("budget", "Gibt es Geld für bezahlte Programme?", "one", ["Nur gratis", "Etwas Geld", "Der Vorstand entscheidet"], False),
         ],
         "src_h": "Quellen",
         "photos": "Fotos von Takeaway, einem Nutzer von Wikimedia Commons",
@@ -455,6 +497,74 @@ WORDS = {
     },
 }
 
+# One name and one icon per step, used everywhere (plan, contents, chooser, board, email).
+# "core": the lines shown; the step's p/table/list/p2 fold under "More about step N".
+STEPMETA = {
+    "en": [
+        {"icon": "🌍", "short": "Ways to give", "core": [
+            "A “How to give” page on fercthailand.org, one box per country.",
+            "Help with leaving Myriad.",
+            "From the USA, with a tax receipt: CAF America.",
+            "Thai tax receipts: e-Donation. We check with the treasurer.",
+        ], "p2": "The sample giving page on hongdam.net shows the idea. The “How to give” page goes on fercthailand.org."},
+        {"icon": "✉️", "short": "Newsletter", "core": [
+            "Move the list from MailPoet (free up to 500) to Brevo (free for more).",
+            "Brevo sends 300 emails a day, so 500 people take two days.",
+            "The first newsletter tells donors the new ways to give.",
+        ]},
+        {"icon": "🖥️", "short": "Website", "p": None, "core": [
+            "New look, a “Sponsor a student” button, the school map.",
+            "Choose A or B:",
+        ], "ab": [
+            ("A", "WordPress, as now", "WordPress, as now", "We build inside your WordPress. You edit as now. It needs updates every week (extra: WordPress care).", "Our work: free. FERC pays for hosting, as now."),
+            ("B", "Simpler website, we host it", "★ Simpler website, we host it", "Same address. Fewer parts to keep safe. You change the words on the page itself.", "Our work: free. We host it at no charge today."),
+        ], "rec": "★ We recommend B. If FERC prefers A, we build in WordPress.",  # stylecheck: allow — NaN asked for this recommendation (23 Oct)
+        "p2": "Why weekly updates on WordPress: in 2025, 11,334 new security holes were found in WordPress, 91% of them in plugins (add-ons). Attackers often use a new hole within 5 hours. With B, we move the old pages and pictures across, and you change words as on the practice copy of your giving page."},
+        {"icon": "📣", "short": "More people see FERC", "core": [
+            "Two posts a week in November and December.",
+            "A short video from the school map.",
+            "Free Google ads for charities (Ad Grants), if Google says yes.",
+        ]},
+        {"icon": "📋", "short": "Sponsor reports", "core": [
+            "From January: one shared list instead of two.",
+            "Type a report once; the sponsor’s report is made from it.",
+        ]},
+    ],
+    "de": [
+        {"icon": "🌍", "short": "Wege zu spenden", "core": [
+            "Eine Seite «So können Sie spenden» auf fercthailand.org, ein Abschnitt pro Land.",
+            "Hilfe beim Ausstieg bei Myriad.",
+            "Aus den USA, mit Spendenbestätigung: CAF America.",
+            "Thailändische Spendenbestätigungen: e-Donation. Wir klären das mit dem Kassier.",
+        ], "p2": "Die Muster-Spendenseite auf hongdam.net zeigt die Idee. Die Seite «So können Sie spenden» kommt auf fercthailand.org."},
+        {"icon": "✉️", "short": "Newsletter", "core": [
+            "Die Liste von MailPoet (gratis bis 500) zu Brevo (gratis für mehr) übertragen.",
+            "Brevo verschickt 300 E-Mails pro Tag; 500 Personen dauern also zwei Tage.",
+            "Der erste Newsletter informiert die Spender über die neuen Wege.",
+        ]},
+        {"icon": "🖥️", "short": "Website", "p": None, "core": [
+            "Neues Aussehen, ein Knopf «Patenschaft übernehmen», die Schulkarte.",
+            "A oder B wählen:",
+        ], "ab": [
+            ("A", "WordPress, wie heute", "WordPress, wie heute", "Wir bauen in Ihrem WordPress. Sie bearbeiten wie bisher. Es braucht jede Woche Updates (Zusatzleistung: WordPress-Pflege).", "Unsere Arbeit: gratis. FERC bezahlt das Hosting wie heute."),
+            ("B", "Einfachere Website, von uns betrieben", "★ Einfachere Website, von uns betrieben", "Gleiche Adresse. Weniger Teile zu schützen. Sie ändern die Texte direkt auf der Seite.", "Unsere Arbeit: gratis. Wir betreiben sie, heute ohne Kosten."),
+        ], "rec": "★ Wir empfehlen B. Wenn FERC A lieber hat, bauen wir in WordPress.",
+        "p2": "Warum jede Woche Updates bei WordPress: 2025 wurden 11’334 neue Sicherheitslücken in WordPress gefunden, 91 % davon in Plugins (Erweiterungen). Angreifer nutzen eine neue Lücke oft innerhalb von 5 Stunden. Bei B übertragen wir die alten Seiten und Bilder, und Sie ändern Texte wie in der Übungskopie Ihrer Spendenseite."},
+        {"icon": "📣", "short": "Mehr Menschen sehen FERC", "core": [
+            "Zwei Beiträge pro Woche im November und Dezember.",
+            "Ein kurzes Video aus der Schulkarte.",
+            "Gratis-Werbung bei Google für gemeinnützige Organisationen (Ad Grants), wenn Google Ja sagt.",
+        ]},
+        {"icon": "📋", "short": "Patenberichte", "core": [
+            "Ab Januar: eine gemeinsame Liste statt zwei.",
+            "Einen Bericht einmal eintippen; daraus entsteht der Patenbericht.",
+        ]},
+    ],
+}
+for _lang, _metas in STEPMETA.items():
+    for _step, _meta in zip(WORDS[_lang]["steps"], _metas):
+        _step.update(_meta)
+
 SOURCES = [
     ("CAF America: Friends Funds", "https://cafamerica.org/friends-funds/"),
     ("DFAT: Overseas Aid Gift Deduction Scheme", "https://www.dfat.gov.au/development/who-we-work-with/ngos/oagds"),
@@ -462,6 +572,7 @@ SOURCES = [
     ("THE STANDARD: donations to foundations through e-Donation from 1 January 2026", "https://thestandard.co/donation-tax-deduction-e-donation-2026/"),
     ("Revenue Department: e-Donation", "https://www.rd.go.th/region/04/saraburi/85/6565.html"),
     ("Brevo pricing", "https://www.brevo.com/pricing/"),
+    ("MailerLite: free plan update (250 subscribers from 16 June 2026)", "https://www.mailerlite.com/help/free-plan-update-faq"),
     ("Patchstack: State of WordPress Security in 2026", "https://patchstack.com/whitepaper/state-of-wordpress-security-in-2026/"),
     ("Google for Nonprofits: Ad Grants", "https://www.google.com/grants/"),
     ("Myriad USA (formerly King Baudouin Foundation United States)", "https://myriadusa.org/"),
@@ -527,7 +638,7 @@ def readbtn(w):
 
 def sec(id_, title, body, w, cls="sec"):
     return f"""<section class="{cls}" id="{id_}" aria-labelledby="{id_}-h"><div class="wrap">
-  <div class="hrow"><h2 id="{id_}-h">{e(title)}</h2>{readbtn(w)}</div>
+  <div class="hrow"><h2 id="{id_}-h">{title}</h2>{readbtn(w)}</div>
   {body}
 </div></section>
 """
@@ -537,31 +648,44 @@ def ul(items, cls="told"):
     return f'<ul class="{cls}">' + "".join(f"<li>{e(x)}</li>" for x in items) + "</ul>"
 
 
+def ico(x):
+    return f'<span aria-hidden="true">{x}</span>'
+
+
+def step_name(n, s):
+    return f'{n} {ico(s["icon"])} {e(s["short"])}'
+
+
 def step_html(w, i, s):
-    out = [f'<li class="step" id="step{i}"><div class="num" aria-hidden="true">{i}</div><div class="body">']
-    out.append(f'<h3><span class="vh">{i}. </span>{e(s["h"])}</h3>')
-    if "p" in s:
-        out.append(f"<p>{e(s['p'])}</p>")
-    if "table" in s:
-        rows = "".join(f'<tr><th scope="row">{e(a)}</th><td>{e(b)}</td></tr>' for a, b in s["table"])
-        out.append(f'<table class="routes"><tbody>{rows}</tbody></table>')
+    out = [f'<li class="step" id="step{i}"><section aria-labelledby="step{i}-h">']
+    out.append(f'<div class="hrow"><p class="of">{e(w["step_of"].format(n=i))}</p>{readbtn(w)}</div>')
+    out.append(f'<h3 id="step{i}-h">{step_name(i, s)}</h3>')
+    out.append(ul(s["core"], "core"))
     if "ab" in s:
         out.append('<div class="ab">' + "".join(
-            f'<div class="opt"><p class="tag">{e(code)}</p><h4>{e(title)}</h4><p>{e(text)}</p></div>'
-            for code, _, title, text in s["ab"]) + "</div>")
+            f'<div class="opt{" rec" if code == "B" else ""}"><p class="tag">{i}{code}</p><h4>{e(title)}</h4><p>{e(text)}</p><p class="small-ink">{e(cost)}</p></div>'
+            for code, _, title, text, cost in s["ab"]) + "</div>")
         out.append(f'<p class="ask">{e(s["rec"])}</p>')
-    if "list" in s:
-        out.append(ul(s["list"], ""))
-    if "map" in s:
-        out.append(f'<p><a class="cta" href="{MAP}">{e(s["map"])} →</a></p>')
-    if "p2" in s:
-        out.append(f"<p>{e(s['p2'])}</p>")
     dl = []
     for k in ("we", "you", "when", "cost"):
-        if k in s:
+        if k in s and not (k == "cost" and "ab" in s):
             dl.append(f"<div><dt>{e(w[k])}</dt><dd>{e(s[k])}</dd></div>")
     out.append(f'<dl class="facts">{"".join(dl)}</dl>')
-    out.append("</div></li>")
+    more = []
+    if s.get("p"):
+        more.append(f"<p>{e(s['p'])}</p>")
+    if "table" in s:
+        rows = "".join(f'<tr><th scope="row">{e(a)}</th><td>{e(b)}</td></tr>' for a, b in s["table"])
+        more.append(f'<table class="routes"><tbody>{rows}</tbody></table>')
+    if "list" in s:
+        more.append(ul(s["list"], ""))
+    if "map" in s:
+        more.append(f'<p><a class="btn" href="{MAP}">{e(s["map"])} →</a></p>')
+    if s.get("p2"):
+        more.append(f"<p>{e(s['p2'])}</p>")
+    if more:
+        out.append(f'<details><summary>{e(w["more"].format(n=i))}</summary>{"".join(more)}</details>')
+    out.append("</section></li>")
     return "".join(out)
 
 
@@ -591,27 +715,49 @@ def mailto(to, subject, body, cc=""):
 
 
 def plan_items(w):
-    """(number, short label, step) for the chooser and board; step 3 splits into 3A and 3B."""
+    """(number, label, step) for the chooser and board; step 3 splits into 3A and 3B."""
     out = []
     for i, s in enumerate(w["steps"][:4]):
         if "ab" in s:
-            for code, short, _, _ in s["ab"]:
-                out.append((f"{i+1}{code}", short, s))
+            for code, short, _, _, cost in s["ab"]:
+                out.append((f"{i+1}{code}", short, s | {"cost": cost}))
         else:
             out.append((str(i + 1), s["short"], s))
     return out
 
 
+def questions(w):
+    out = []
+    for key, q, kind, opts, note in w["qa"]:
+        typ = "radio" if kind == "one" else "checkbox"
+        items = "".join(
+            f'<label class="pick chip"><input type="{typ}" name="q-{key}" value="{e(o)}"> <span>{e(o)}</span></label>'
+            for o in opts)
+        n = (f'<label class="field small-field">{e(w["q_note"])}<input type="text" name="qn-{key}"></label>' if note else "")
+        out.append(f'<fieldset class="q" data-q="{key}" data-text="{e(q)}"><legend>{e(q)}</legend><div class="chips">{items}</div>{n}</fieldset>')
+    return "".join(out)
+
+
 def chooser(w):
+    st = w["steps"]
     steps = "".join(
-        f'<label class="pick"><input type="checkbox" name="step" value="{n}" data-label="{e(n + ". " + short)}"> <span>{n}. {e(short)}</span></label>'
-        for n, short, _ in plan_items(w)
+        f'<label class="pick"><input type="checkbox" name="step" value="{n}" data-label="{e(n + " " + s["icon"] + " " + s["short"])}"> <span>{step_name(n, s)}</span></label>'
+        for n, short, s in plan_items(w) if not n.startswith("3")
     )
-    steps += f'<label class="pick"><input type="checkbox" name="step" value="5" data-label="{e(w["ch_step5"])}"> <span>{e(w["ch_step5"])}</span></label>'
-    extras = "".join(
-        f'<label class="pick"><input type="checkbox" name="extra" value="{k}" data-once="{o}" data-month="{m}" data-label="{e(w["extras"][k][0] + " (" + price(w, o, m) + ")")}"> <span>{e(w["extras"][k][0])} <b class="pr">{e(price(w, o, m))}</b></span></label>'
-        for k, o, m in EXTRAS
-    )
+    web = "".join(
+        f'<label class="pick card{" rec" if code == "B" else ""}"><input type="radio" name="web" value="3{code}" data-label="{e("3" + code + " " + short)}"> <span><b>3{code}</b> {e(title)}<i class="needs">{e(cost)}</i></span></label>'
+        for code, short, title, _, cost in st[2]["ab"]
+    ) + f'<label class="pick"><input type="radio" name="web" value="talk" data-label="3 {e(w["ch_web_talk"])}"> <span>{e(w["ch_web_talk"])}</span></label>'
+    s5 = f'<label class="pick"><input type="checkbox" name="step" value="5" data-label="{e(w["ch_step5"])}"> <span>{e(w["ch_step5"])}</span></label>'
+
+    def extra_pick(k, o, m):
+        needs = ' data-needs="3A"' if k == "wpcare" else ""
+        note = f'<i class="needs lock">{e(w["ch_wp_only"])}</i>' if k == "wpcare" else ""
+        name = w["extras"][k][0]
+        label = e(name + " (" + price(w, o, m) + ")")
+        return (f'<label class="pick"><input type="checkbox" name="extra" value="{k}" data-once="{o}" data-month="{m}"{needs} data-label="{label}">'
+                f' <span>{e(name)} <b class="pr">{e(price(w, o, m))}</b>{note}</span></label>')
+    extras = "".join(extra_pick(k, o, m) for k, o, m in EXTRAS)
     pay = "".join(
         f'<label class="pick"><input type="radio" name="pay" value="{e(p)}"> <span>{e(p)}</span></label>'
         for p in w["pay"]
@@ -626,97 +772,121 @@ def chooser(w):
         "groups": w["ch_groups"], "name": w["ch_name"], "total": w["ch_total"], "none": w["ch_none"],
         "once": w["once"], "month": w["month"], "copied": w["ch_copied"],
         "and": w["ch_and"], "money": w["ch_money"], "de": w["lang"].startswith("de"),
-        "half": w["pay"][1],
+        "half": w["pay"][1], "web": w["ch_web"], "answers": w["q_answers"],
     }, ensure_ascii=False)
     return f"""<p>{e(w['ch_p'])}</p>
 <form id="chooser" action="#choose" onsubmit="return false" data-cfg="{e(cfg)}">
   <fieldset><legend>{e(w['ch_plan'])}</legend>{steps}</fieldset>
-  <fieldset><legend>{e(w['ch_extras'])}</legend>{extras}</fieldset>
+  <fieldset><legend>{e(w['ch_web'])}</legend>{web}</fieldset>
+  <fieldset><legend>{e(w['ch_step5'].split(':')[0])}</legend>{s5}</fieldset>
+  <fieldset><legend>➕ {e(w['ch_extras'])}</legend>{extras}</fieldset>
   <fieldset><legend>{e(w['ch_pay'])}</legend>{pay}</fieldset>
-  <fieldset><legend>{e(w['ch_trade'])}</legend>{trades}</fieldset>
-  <label class="field">{e(w['ch_groups'])}<textarea name="groups" rows="2"></textarea></label>
+  <fieldset><legend>🤝 {e(w['ch_trade'])}</legend>{trades}</fieldset>
+  <h3 class="qh">❓ {e(w['q_h'])}</h3>
+  <p>{e(w['q_p'])}</p>
+  {questions(w)}
+  <label class="field">🏘️ {e(w['ch_groups'])}<textarea name="groups" rows="2"></textarea></label>
   <label class="field">{e(w['ch_name'])}<input type="text" name="name" autocomplete="name"></label>
   <p class="total" id="total" aria-live="polite">{e(w['ch_total'])}: {e(w['ch_none'])}</p>
-  <p class="row"><a class="cta" id="send" href="mailto:{MAIL}">{e(w['ch_send'])}</a> <button class="btn" type="button" id="copy">{e(w['ch_copy'])}</button></p>
-  <p class="small">{e(w['ch_help'])}</p>
-  <p class="small" id="copied" aria-live="polite"></p>
+  <div class="preview"><p class="pv-h">{e(w['pv_h'])}</p><p class="pv-to">{e(w['pv_to'])}: {MAIL}<br>{e(w['pv_subject'])}: {e(w['ch_subject'])}</p><pre id="pv"></pre></div>
+  <p class="help">{e(w['ch_help'])}</p>
+  <p class="sendrow"><a class="cta send" id="send" href="mailto:{MAIL}">✉️ {e(w['ch_send'])}</a> <button class="btn send" type="button" id="copy">📋 {e(w['ch_copy'])}</button></p>
+  <p class="small-ink" id="copied" aria-live="polite"></p>
 </form>
 """
 
 
 def page(w, rel, path):
     told = ul(w["told"])
-    steps = "".join(step_html(w, i + 1, s) for i, s in enumerate(w["steps"]))
+    st = w["steps"]
+    steps = "".join(step_html(w, i + 1, s) for i, s in enumerate(st))
     time = '<ol class="time">' + "".join(f'<li><span class="d">{e(a)}</span> <span>{e(b)}</span></li>' for a, b in w["time"]) + "</ol>"
     lede = "".join(f'<p class="lede">{e(x)}</p>' for x in w["lede"])
-    who = "".join(f"<p>{e(x)}</p>" for x in w["who"]) + f'<p class="row"><a class="cta" href="{DESK}">{e(w["desk_btn"])} →</a> <a class="btn" href="mailto:{MAIL}?subject=FERC">{e(w["write"])}: {MAIL}</a></p>'
+    who = "".join(f"<p>{e(x)}</p>" for x in w["who"]) + f'<p class="row"><a class="btn" href="{DESK}">{e(w["desk_btn"])} →</a> <a class="btn" href="mailto:{MAIL}?subject=FERC">{e(w["write"])}: {MAIL}</a></p>'
     extras = '<ul class="extras">' + "".join(
         f'<li><h3>{e(w["extras"][k][0])}</h3><p class="pr">{e(price(w, o, m))}</p><p>{e(w["extras"][k][1])}</p></li>'
         for k, o, m in EXTRAS
     ) + "</ul>"
     trade = f"<p>{e(w['tr_p'])}</p>" + ul(w["trades"].values()) + f"<p>{e(w['tr_note'])}</p>"
     intro = mailto("", w["intro_subject"], w["intro_body"], cc=MAIL)
-    comm = "".join(f"<p>{e(x)}</p>" for x in w["co"]) + f'<p class="row"><a class="cta" href="{e(intro)}">{e(w["intro_btn"])}</a> <a class="btn" href="{DESK}">{e(w["desk_btn"])}</a></p>'
-    q = '<ol class="qs">' + "".join(f"<li>{e(x)}</li>" for x in w["q"]) + "</ol>"
+    comm = "".join(f"<p>{e(x)}</p>" for x in w["co"]) + f'<p class="row"><a class="btn" href="{e(intro)}">✉️ {e(w["intro_btn"])}</a> <a class="btn" href="{DESK}">{e(w["desk_btn"])}</a></p>'
+    nav = [(f"#step{i+1}", step_name(i + 1, s)) for i, s in enumerate(st)] + [
+        ("#extras", f'{ico("➕")} {e(w["nav_extras"])}'),
+        ("#trade", f'{ico("🤝")} {e(w["nav_trade"])}'),
+        ("#community", f'{ico("🏘️")} {e(w["nav_co"])}'),
+        ("#choose", f'{ico("✅")} {e(w["nav_choose"])}'),
+    ]
+    navhtml = f'<nav class="toc" aria-labelledby="toc-h"><div class="wrap"><h2 id="toc-h">{e(w["nav_h"])}</h2><ul>' + "".join(f'<li><a href="{h}">{t}</a></li>' for h, t in nav) + "</ul></div></nav>"
     return head(w, rel, w["title"], path) + f"""
 <header class="band hero" style="background-image:url({rel}img/road.jpg)">
   <p class="kick">{e(w['kick'])}</p>
-  <div class="in">
-    <h1>{e(w['h1'])}</h1>
+  <section class="in" aria-labelledby="h1">
+    <div class="hrow"><h1 id="h1">{e(w['h1'])}</h1></div>
+    <p class="row"><a class="cta light" href="#choose">✅ {e(w['go_choose'])}</a> <a class="cta ghost" href="board/">🖨️ {e(w['board_btn'])}</a></p>
     {lede}
-    <p class="row"><a class="cta light" href="#choose">{e(w['go_choose'])} ↓</a> <a class="cta ghost" href="board/">{e(w['board_btn'])} →</a></p>
-  </div>
+    <p class="row">{readbtn(w)}</p>
+  </section>
   <p class="cred">{e(w['road'])}</p>
 </header>
 <main>
-{sec("who", w["who_h"], who, w)}
-{sec("told", w["told_h"], told, w, "sec alt")}
-{sec("when", w["time_h"], time, w)}
+{navhtml}
+{sec("who", e(w["who_h"]), who, w)}
+{sec("told", e(w["told_h"]), told, w, "sec alt")}
+{sec("when", e(w["time_h"]), time, w)}
 <section class="sec" id="plan" aria-labelledby="plan-h"><div class="wrap">
   <h2 id="plan-h">{e(w['plan_h'])}</h2>
   <ol class="steps">{steps}</ol>
 </div></section>
 <div class="band short" style="background-image:url({rel}img/dao.jpg);background-position:center 40%" role="img" aria-label="{e(w['dao'])}"><p class="cred">{e(w['dao'])}</p></div>
-{sec("extras", w["ex_h"], f"<p>{e(w['ex_p'])}</p>" + extras, w)}
-{sec("trade", w["tr_h"], trade, w, "sec alt")}
-{sec("community", w["co_h"], comm, w)}
-{sec("choose", w["ch_h"], chooser(w), w, "sec alt choose")}
-{sec("privacy", w["priv_h"], ul(w["priv"]), w)}
-{sec("questions", w["q_h"], q, w, "sec alt")}
+{sec("extras", ico("➕") + " " + e(w["ex_h"]), f"<p>{e(w['ex_p'])}</p>" + extras, w)}
+{sec("trade", ico("🤝") + " " + e(w["tr_h"]), trade, w, "sec alt")}
+{sec("community", ico("🏘️") + " " + e(w["co_h"]), comm, w)}
+{sec("choose", ico("✅") + " " + e(w["ch_h"]), chooser(w), w, "sec alt choose")}
+{sec("privacy", e(w["priv_h"]), ul(w["priv"]), w)}
 </main>
+<a class="float" id="float" href="#choose">✅ {e(w['float'])}</a>
 """ + foot(w, rel)
 
 
 def board(w, rel, path):
     c0, c1, c2c, c2, c3 = w["board_cols"]
-    cy, cn = c0, c1
-    rows = "".join(
-        f'<tr><td class="box" data-l="{e(cy)}">☐</td><td class="box" data-l="{e(cn)}">☐</td><th scope="row"><span class="n">{n}</span> {e(short)}</th><td data-l="{e(c2)}">{e(s["when"])}</td><td data-l="{e(c3)}">{e(s["cost"])}</td></tr>'
-        for n, short, s in plan_items(w)
-    )
-    s5 = w["steps"][4]
-    rows += f'<tr><td class="box"></td><td class="box"></td><th scope="row"><span class="n">5</span> {e(s5["short"])}</th><td data-l="{e(c2)}">{e(s5["when"])}</td><td data-l="{e(c3)}">{e(s5["cost"])}</td></tr>'
+    st = w["steps"]
+
+    def row(n, s, label=None):
+        return (f'<tr><td class="box" data-l="{e(c0)}">☐</td><td class="box" data-l="{e(c1)}">☐</td>'
+                f'<th scope="row">{label or step_name(n, s)}</th><td data-l="{e(c2)}">{e(s["when"])}</td><td data-l="{e(c3)}">{e(s["cost"])}</td></tr>')
+    rows = row(1, st[0]) + row(2, st[1])
+    opts = " &nbsp; ".join(f'☐ 3{code} {e(short)}' for code, short, _, _, _ in st[2]["ab"]) + f' &nbsp; ☐ {e(w["ch_web_talk"])}'
+    costs = " ".join(f"3{code}: {e(cost)}" for code, _, _, _, cost in st[2]["ab"])
+    rows += (f'<tr><td colspan="2" class="box"></td><th scope="row">{step_name(3, st[2])}<br><span class="opts">{e(w["board_or"])} {opts}</span></th>'
+             f'<td data-l="{e(c2)}">{e(st[2]["when"])}</td><td data-l="{e(c3)}">{costs}</td></tr>')
+    rows += row(4, st[3])
+    rows += (f'<tr><td colspan="2" class="box"></td><th scope="row">{step_name(5, st[4])}</th>'
+             f'<td data-l="{e(c2)}">{e(st[4]["when"])}</td><td data-l="{e(c3)}">{e(st[4]["cost"])}</td></tr>')
     ex = "".join(
-        f'<tr><td class="box" data-l="{e(cy)}">☐</td><td class="box" data-l="{e(cn)}">☐</td><th scope="row">{e(w["extras"][k][0])}</th><td colspan="2" data-l="{e(c3)}">{e(price(w, o, m))}</td></tr>'
+        f'<tr><td class="box" data-l="{e(c0)}">☐</td><td class="box" data-l="{e(c1)}">☐</td><th scope="row">{e(w["extras"][k][0])}'
+        + (f'<br><span class="opts">{e(w["ch_wp_only"])}</span>' if k == "wpcare" else "")
+        + f'</th><td colspan="2" data-l="{e(c3)}">{e(price(w, o, m))}</td></tr>'
         for k, o, m in EXTRAS
     )
     pay = " &nbsp; ".join(f"☐ {e(p)}" for p in w["pay"])
     priv = ul(w["priv"], "")
     return head(w, rel, w["board_title"], path) + f"""
 <main class="wrap boardpage" id="plan">
-  <p class="noprint"><a href="../">← {e(w['back'])}</a> · <button class="btn" type="button" onclick="window.print()">{e(w['print'])}</button></p>
+  <p class="noprint row"><a class="btn" href="../">← {e(w['back'])}</a> <button class="btn" type="button" onclick="window.print()">🖨️ {e(w['print'])}</button> <a class="btn" href="../#choose">✅ {e(w['board_web'])}</a></p>
+  <p class="noprint help">{e(w['board_screen'])}</p>
   <h1>{e(w['board_title'])}</h1>
   <p class="lede">{e(w['board_lede'])}</p>
   <p class="ask">{e(w['board_ask'])}</p>
   <p class="ask">{e(w['board_tick'])}</p>
   <table class="board"><thead><tr><th scope="col" class="box">{e(c0)}</th><th scope="col" class="box">{e(c1)}</th><th scope="col">{e(c2c)}</th><th scope="col">{e(c2)}</th><th scope="col">{e(c3)}</th></tr></thead><tbody>{rows}</tbody></table>
-  <h2>{e(w['ex_h'])}</h2>
+  <h2>{ico("➕")} {e(w['ex_h'])}</h2>
   <p>{e(w['ex_p'])}</p>
   <table class="board"><thead><tr><th scope="col" class="box">{e(c0)}</th><th scope="col" class="box">{e(c1)}</th><th scope="col">{e(w['ch_extras'])}</th><th scope="col" colspan="2">{e(c3)}</th></tr></thead><tbody>{ex}</tbody></table>
   <p><b>{e(w['ch_pay'])}:</b> {pay}</p>
-  <p><b>{e(w['tr_h'])}:</b></p>
+  <p><b>{ico("🤝")} {e(w['tr_h'])}:</b></p>
   {ul(w["trades"].values(), "")}
-  <h2>{e(w['co_h'])}</h2>
+  <h2>{ico("🏘️")} {e(w['co_h'])}</h2>
   <p>{e(w['co'][2])}</p>
   <p>{e(w['board_groups'])} ________________________________</p>
   <p>{e(w['board_sign'])}</p>
