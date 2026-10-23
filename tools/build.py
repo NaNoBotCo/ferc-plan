@@ -25,6 +25,7 @@ EXTRAS = [
     ("alumni", 3000, 0),
     ("usf", 5000, 0),
     ("thai", 10000, 0),
+    ("wpcare", 0, 2000),
 ]
 
 WORDS = {
@@ -75,7 +76,8 @@ WORDS = {
             ("28 Nov", "Your talk at the Expat Club"),
             ("29 Nov", "Fundraiser"),
             ("December", "Posts and newsletter for Christmas"),
-            ("January", "Steps 3 and 5"),
+            ("January", "Steps 3 and 5 start"),
+            ("March", "New website and report tool ready, with a short guide"),
         ],
         "plan_h": "The plan",
         "we": "We do",
@@ -102,16 +104,21 @@ WORDS = {
             {
                 "h": "A newsletter for more than 500 people",
                 "short": "Newsletter moved to Brevo",
-                "p": "MailPoet, your newsletter tool, is free up to 500 contacts, and FERC has reached 500. Brevo, another newsletter service, is free for more than 500 contacts. It sends 300 emails a day. So a newsletter to 500 people goes out over two days: 300 on the first day, the other 200 the next day with one more click. Free Brevo newsletters end with a small line, “Sent with Brevo”.",
-                "we": "Move the list to Brevo. People who unsubscribed stay unsubscribed. Make a FERC newsletter design and a sign-up form on fercthailand.org. Write a one-page guide.",
+                "p": "MailPoet, your newsletter tool, is free up to 500 contacts, and FERC has reached 500. Brevo, another newsletter service, is free for more than 500 contacts. It sends 300 emails a day. So a newsletter to 500 people goes out over two days: 300 on the first day, the other 200 the next day with one more click. Free Brevo newsletters end with a small line, “Sent with Brevo”. (MailerLite, a similar service, now also stops at 500 free contacts.)",
+                "we": "Move the list to Brevo. People who unsubscribed stay unsubscribed. Make a FERC newsletter design and a sign-up form on fercthailand.org. Write a one-page guide. The first newsletter tells donors about the new ways to give from step 1.",
                 "you": "Say yes to the move. Then you send each newsletter. The guide shows how.",
                 "when": "November",
                 "cost": "Free",
             },
             {
-                "h": "Website: new look, same WordPress, with the school map",
+                "h": "Website: new look, with the school map",
                 "short": "Website refresh with the school map",
-                "p": "Everything stays on WordPress. You and Heinz edit it as now.",
+                "p": "You can choose where the new website runs.",
+                "ab": [
+                    ("A", "Website on WordPress, as now", "Stay on WordPress", "We build the new look inside FERC’s WordPress. You and Heinz edit it as now. Most security holes in WordPress are in plugins (add-ons): in 2025, 11,334 new holes were found, 91% of them in plugins. Attackers often use a new hole within 5 hours. So a WordPress site needs updates every week: see the extra “WordPress care”."),
+                    ("B", "Website on a simpler system", "Move to a simpler website that we host", "Same address, fercthailand.org. Fewer parts to update, so less to keep safe. You change the words on the page itself, as on the practice copy of your giving page. We move the old pages and pictures across."),
+                ],
+                "rec": "We recommend B. If FERC prefers A, we build in WordPress.",  # stylecheck: allow — NaN asked for this recommendation (23 Oct)
                 "list": [
                     "A “Sponsor a student” button on every page",
                     "The “How to give” page from step 1",
@@ -121,10 +128,10 @@ WORDS = {
                     "A short guide, and one hour with you and Heinz to show how it works",
                 ],
                 "map": "See the school map",
-                "we": "Build it inside FERC’s WordPress.",
-                "you": "Tell us which company hosts the website.",
+                "we": "Build the new website, A or B.",
+                "you": "Choose A or B. Tell us which company hosts the website today.",
                 "when": "January",
-                "cost": "Our work: free. FERC pays for hosting, as now.",
+                "cost": "Our work: free. A: FERC pays for hosting, as now. B: we host it at no charge today.",
             },
             {
                 "h": "More people see FERC",
@@ -132,7 +139,7 @@ WORDS = {
                 "list": [
                     "Two posts a week on Facebook and LinkedIn in November and December: the talk, the fundraiser, Christmas",
                     "A short video made from the school map’s photos",
-                    "Google Ad Grants: free Google search ads for charities, up to US$10,000 a month. We check whether FERC can get them, and apply.",
+                    "Google Ad Grants: free Google search ads for charities, up to US$10,000 a month. Google asks for a fast, secure website; step 3 gives FERC one. We check whether FERC can get them, and apply.",
                     "A count of website visits and clicks on “How to give”, for the board",
                 ],
                 "we": "Write the posts and make the video. Apply for Ad Grants.",
@@ -168,6 +175,7 @@ WORDS = {
             "alumni": ("Alumni survey", "Questions for FERC alumni as a short form in Thai and English, in FERC’s own Google account."),
             "usf": ("Papers for US foundations", "The English papers a US foundation asks for before it gives to a charity abroad. Only if a US foundation is among FERC’s donors."),
             "thai": ("Thai website", "Thai pages beside the English ones, checked by a Thai speaker."),
+            "wpcare": ("WordPress care", "For choice A: each week we update WordPress and its plugins, check for new security holes, and keep a backup."),
         },
         "tr_h": "Pay in trade",
         "tr_p": "FERC can pay up to half of any extra in trade instead of money. For example:",
@@ -218,7 +226,7 @@ WORDS = {
             "Leaving Myriad: what is hardest? The legal side, the bank, or telling donors?",
             "May we ask the treasurer about e-Donation, and whether FERC wants card payments on the website?",
             "Which company hosts the website?",
-            "Does FERC use Google for Nonprofits (free Google tools for charities)?",
+            "Does FERC use Google for Nonprofits or Canva for Nonprofits (free tools for charities)?",
             "Is there money for paid tools, or only free tools?",
         ],
         "src_h": "Sources",
@@ -280,7 +288,8 @@ WORDS = {
             ("28. Nov.", "Ihr Vortrag im Expat Club"),
             ("29. Nov.", "Spendenanlass"),
             ("Dezember", "Beiträge und Newsletter für Weihnachten"),
-            ("Januar", "Schritte 3 und 5"),
+            ("Januar", "Schritte 3 und 5 beginnen"),
+            ("März", "Neue Website und Berichts-Werkzeug bereit, mit einer kurzen Anleitung"),
         ],
         "plan_h": "Der Plan",
         "we": "Wir machen",
@@ -307,16 +316,21 @@ WORDS = {
             {
                 "h": "Newsletter für mehr als 500 Personen",
                 "short": "Newsletter zu Brevo",
-                "p": "MailPoet, Ihr Newsletter-Programm, ist bis 500 Kontakte gratis, und FERC hat 500 erreicht. Brevo, ein anderer Newsletter-Dienst, ist auch für mehr als 500 Kontakte gratis. Brevo verschickt 300 E-Mails pro Tag. Ein Newsletter an 500 Personen geht also über zwei Tage: 300 am ersten Tag, die anderen 200 am nächsten Tag mit einem weiteren Klick. In der Gratisversion endet jeder Newsletter mit einer kleinen Zeile «Sent with Brevo».",
-                "we": "Die Liste zu Brevo übertragen. Wer sich abgemeldet hat, bleibt abgemeldet. Ein FERC-Design für den Newsletter und ein Anmeldeformular auf fercthailand.org machen. Eine Anleitung auf einer Seite schreiben.",
+                "p": "MailPoet, Ihr Newsletter-Programm, ist bis 500 Kontakte gratis, und FERC hat 500 erreicht. Brevo, ein anderer Newsletter-Dienst, ist auch für mehr als 500 Kontakte gratis. Brevo verschickt 300 E-Mails pro Tag. Ein Newsletter an 500 Personen geht also über zwei Tage: 300 am ersten Tag, die anderen 200 am nächsten Tag mit einem weiteren Klick. In der Gratisversion endet jeder Newsletter mit einer kleinen Zeile «Sent with Brevo». (MailerLite, ein ähnlicher Dienst, ist jetzt auch nur bis 500 Kontakte gratis.)",
+                "we": "Die Liste zu Brevo übertragen. Wer sich abgemeldet hat, bleibt abgemeldet. Ein FERC-Design für den Newsletter und ein Anmeldeformular auf fercthailand.org machen. Eine Anleitung auf einer Seite schreiben. Der erste Newsletter informiert die Spender über die neuen Wege aus Schritt 1.",
                 "you": "Ja sagen zum Umzug. Dann verschicken Sie jeden Newsletter selbst, mit Hilfe der Anleitung.",
                 "when": "November",
                 "cost": "Gratis",
             },
             {
-                "h": "Website: neues Aussehen, gleiches WordPress, mit der Schulkarte",
+                "h": "Website: neues Aussehen, mit der Schulkarte",
                 "short": "Website erneuert, mit der Schulkarte",
-                "p": "Alles bleibt auf WordPress. Sie und Heinz bearbeiten die Seite wie bisher.",
+                "p": "Sie können wählen, wo die neue Website läuft.",
+                "ab": [
+                    ("A", "Website auf WordPress, wie heute", "Bei WordPress bleiben", "Wir bauen das neue Aussehen im WordPress von FERC. Sie und Heinz bearbeiten die Seite wie bisher. Die meisten Sicherheitslücken bei WordPress liegen in Plugins (Erweiterungen): 2025 wurden 11’334 neue Lücken gefunden, 91 % davon in Plugins. Angreifer nutzen eine neue Lücke oft innerhalb von 5 Stunden. Eine WordPress-Seite braucht deshalb jede Woche Updates: siehe die Zusatzleistung «WordPress-Pflege»."),
+                    ("B", "Website auf einem einfacheren System", "Zu einer einfacheren Website wechseln, die wir betreiben", "Gleiche Adresse, fercthailand.org. Weniger Teile zum Aktualisieren, also weniger zu schützen. Sie ändern die Texte direkt auf der Seite, wie in der Übungskopie Ihrer Spendenseite. Wir übertragen die alten Seiten und Bilder."),
+                ],
+                "rec": "Wir empfehlen B. Wenn FERC A lieber hat, bauen wir in WordPress.",
                 "list": [
                     "Ein Knopf «Patenschaft übernehmen» auf jeder Seite",
                     "Die Seite «So können Sie spenden» aus Schritt 1",
@@ -326,10 +340,10 @@ WORDS = {
                     "Eine kurze Anleitung und eine Stunde mit Ihnen und Heinz, um alles zu zeigen",
                 ],
                 "map": "Die Schulkarte ansehen",
-                "we": "Alles im WordPress von FERC bauen.",
-                "you": "Uns sagen, bei welcher Firma die Website gehostet ist.",
+                "we": "Die neue Website bauen, A oder B.",
+                "you": "A oder B wählen. Uns sagen, bei welcher Firma die Website heute gehostet ist.",
                 "when": "Januar",
-                "cost": "Unsere Arbeit: gratis. FERC bezahlt das Hosting wie heute.",
+                "cost": "Unsere Arbeit: gratis. A: FERC bezahlt das Hosting wie heute. B: Wir betreiben sie, heute ohne Kosten.",
             },
             {
                 "h": "Mehr Menschen sehen FERC",
@@ -337,7 +351,7 @@ WORDS = {
                 "list": [
                     "Zwei Beiträge pro Woche auf Facebook und LinkedIn im November und Dezember: der Vortrag, der Spendenanlass, Weihnachten",
                     "Ein kurzes Video aus den Fotos der Schulkarte",
-                    "Google Ad Grants: Gratis-Werbung in der Google-Suche für gemeinnützige Organisationen, bis 10’000 US-Dollar pro Monat. Wir prüfen, ob FERC sie bekommen kann, und stellen den Antrag.",
+                    "Google Ad Grants: Gratis-Werbung in der Google-Suche für gemeinnützige Organisationen, bis 10’000 US-Dollar pro Monat. Google verlangt eine schnelle, sichere Website; Schritt 3 gibt FERC eine. Wir prüfen, ob FERC sie bekommen kann, und stellen den Antrag.",
                     "Eine Zählung der Website-Besuche und der Klicks auf «So können Sie spenden», für den Vorstand",
                 ],
                 "we": "Die Beiträge schreiben und das Video machen. Ad Grants beantragen.",
@@ -373,6 +387,7 @@ WORDS = {
             "alumni": ("Umfrage für Ehemalige", "Fragen an ehemalige FERC-Schüler als kurzes Formular auf Thai und Englisch, im eigenen Google-Konto von FERC."),
             "usf": ("Unterlagen für US-Stiftungen", "Die englischen Unterlagen, die eine US-Stiftung verlangt, bevor sie einer Organisation im Ausland spendet. Nur wenn eine US-Stiftung unter den Spendern von FERC ist."),
             "thai": ("Website auf Thai", "Thai-Seiten neben den englischen, geprüft von einer Person mit Thai als Muttersprache."),
+            "wpcare": ("WordPress-Pflege", "Für Wahl A: Jede Woche aktualisieren wir WordPress und die Plugins, prüfen auf neue Sicherheitslücken und machen eine Sicherungskopie."),
         },
         "tr_h": "Mit Gegenleistungen bezahlen",
         "tr_p": "FERC kann bis zur Hälfte jeder Zusatzleistung mit einer Gegenleistung statt mit Geld bezahlen. Zum Beispiel:",
@@ -423,7 +438,7 @@ WORDS = {
             "Ausstieg bei Myriad: Was ist am schwierigsten? Das Rechtliche, die Bank oder die Information an die Spender?",
             "Dürfen wir den Kassier zu e-Donation fragen, und ob FERC Kartenzahlungen auf der Website möchte?",
             "Welche Firma betreibt die Website (Hosting)?",
-            "Nutzt FERC Google for Nonprofits (gratis Google-Werkzeuge für gemeinnützige Organisationen)?",
+            "Nutzt FERC Google for Nonprofits oder Canva for Nonprofits (Gratis-Werkzeuge für gemeinnützige Organisationen)?",
             "Gibt es Geld für bezahlte Programme, oder nur für Gratis-Programme?",
         ],
         "src_h": "Quellen",
@@ -447,6 +462,7 @@ SOURCES = [
     ("THE STANDARD: donations to foundations through e-Donation from 1 January 2026", "https://thestandard.co/donation-tax-deduction-e-donation-2026/"),
     ("Revenue Department: e-Donation", "https://www.rd.go.th/region/04/saraburi/85/6565.html"),
     ("Brevo pricing", "https://www.brevo.com/pricing/"),
+    ("Patchstack: State of WordPress Security in 2026", "https://patchstack.com/whitepaper/state-of-wordpress-security-in-2026/"),
     ("Google for Nonprofits: Ad Grants", "https://www.google.com/grants/"),
     ("Myriad USA (formerly King Baudouin Foundation United States)", "https://myriadusa.org/"),
 ]
@@ -529,6 +545,11 @@ def step_html(w, i, s):
     if "table" in s:
         rows = "".join(f'<tr><th scope="row">{e(a)}</th><td>{e(b)}</td></tr>' for a, b in s["table"])
         out.append(f'<table class="routes"><tbody>{rows}</tbody></table>')
+    if "ab" in s:
+        out.append('<div class="ab">' + "".join(
+            f'<div class="opt"><p class="tag">{e(code)}</p><h4>{e(title)}</h4><p>{e(text)}</p></div>'
+            for code, _, title, text in s["ab"]) + "</div>")
+        out.append(f'<p class="ask">{e(s["rec"])}</p>')
     if "list" in s:
         out.append(ul(s["list"], ""))
     if "map" in s:
@@ -569,10 +590,22 @@ def mailto(to, subject, body, cc=""):
     return f"mailto:{to}?{q}"
 
 
+def plan_items(w):
+    """(number, short label, step) for the chooser and board; step 3 splits into 3A and 3B."""
+    out = []
+    for i, s in enumerate(w["steps"][:4]):
+        if "ab" in s:
+            for code, short, _, _ in s["ab"]:
+                out.append((f"{i+1}{code}", short, s))
+        else:
+            out.append((str(i + 1), s["short"], s))
+    return out
+
+
 def chooser(w):
     steps = "".join(
-        f'<label class="pick"><input type="checkbox" name="step" value="{i+1}" data-label="{e(str(i+1) + ". " + s["short"])}"> <span>{i+1}. {e(s["short"])}</span></label>'
-        for i, s in enumerate(w["steps"][:4])
+        f'<label class="pick"><input type="checkbox" name="step" value="{n}" data-label="{e(n + ". " + short)}"> <span>{n}. {e(short)}</span></label>'
+        for n, short, _ in plan_items(w)
     )
     steps += f'<label class="pick"><input type="checkbox" name="step" value="5" data-label="{e(w["ch_step5"])}"> <span>{e(w["ch_step5"])}</span></label>'
     extras = "".join(
@@ -658,8 +691,8 @@ def board(w, rel, path):
     c0, c1, c2c, c2, c3 = w["board_cols"]
     cy, cn = c0, c1
     rows = "".join(
-        f'<tr><td class="box" data-l="{e(cy)}">☐</td><td class="box" data-l="{e(cn)}">☐</td><th scope="row"><span class="n">{i+1}</span> {e(s["short"])}</th><td data-l="{e(c2)}">{e(s["when"])}</td><td data-l="{e(c3)}">{e(s["cost"])}</td></tr>'
-        for i, s in enumerate(w["steps"][:4])
+        f'<tr><td class="box" data-l="{e(cy)}">☐</td><td class="box" data-l="{e(cn)}">☐</td><th scope="row"><span class="n">{n}</span> {e(short)}</th><td data-l="{e(c2)}">{e(s["when"])}</td><td data-l="{e(c3)}">{e(s["cost"])}</td></tr>'
+        for n, short, s in plan_items(w)
     )
     s5 = w["steps"][4]
     rows += f'<tr><td class="box"></td><td class="box"></td><th scope="row"><span class="n">5</span> {e(s5["short"])}</th><td data-l="{e(c2)}">{e(s5["when"])}</td><td data-l="{e(c3)}">{e(s5["cost"])}</td></tr>'
