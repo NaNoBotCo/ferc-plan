@@ -155,7 +155,7 @@ details[open] summary::after{content:"▴"}
 .qh{margin:1.4rem 0 .4rem;font-size:1.3rem}
 .chip{min-height:48px}
 .chip:has(input:checked){font-weight:700}
-.chip:has(input:checked) span::before{content:"✓ "}
+.chip:has(input:checked){box-shadow:0 0 0 3px var(--bg),0 0 0 6px var(--acc)}
 .chip:has(:checked) input{accent-color:var(--acc-ink)}
 .small-field{display:block}
 .small-field input{width:100%}
