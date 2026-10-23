@@ -140,6 +140,12 @@ WORDS = {
         "who_h": "Who we are",
         "who": "NaN, Marcus (Myat Kaung Thant) and Michael, Chiang Mai.",
         "write": "Write to NaN",
+        "fee_h": "Our work",
+        "fee": [
+            "Steps 1 to 4: no charge to FERC.",
+            "Step 5: a price agreed with the board in January.",
+            "Introductions: when someone you introduce becomes our client, 20% of their first year’s fees goes to FERC as a gift for students.",
+        ],
         "src_h": "Sources",
         "photos": "Photos",
         "board_title": "FERC · Plan for the board, 31 October 2026",
@@ -283,6 +289,12 @@ WORDS = {
         "who_h": "Wer wir sind",
         "who": "NaN, Marcus (Myat Kaung Thant) und Michael, Chiang Mai.",
         "write": "NaN schreiben",
+        "fee_h": "Unsere Arbeit",
+        "fee": [
+            "Schritte 1 bis 4: ohne Kosten für FERC.",
+            "Schritt 5: ein Preis, den wir im Januar mit dem Vorstand vereinbaren.",
+            "Empfehlungen: Wenn jemand, den Sie uns vorstellen, unser Kunde wird, gehen 20 % seiner Gebühren im ersten Jahr als Spende für die Schüler an FERC.",
+        ],
         "src_h": "Quellen",
         "photos": "Fotos",
         "board_title": "FERC · Plan für den Vorstand, 31. Oktober 2026",
@@ -364,7 +376,12 @@ def foot(w, rel):
         f'{e(w[k])} · {e(a)} · <a href="{u}">Wikimedia Commons</a> · <a href="{lu}">{e(l)}</a>'
         for k, a, u, l, lu in PHOTOS
     )
-    return f"""<section class="sec" aria-labelledby="who-h"><div class="wrap">
+    fee = "".join(f"<li>{e(x)}</li>" for x in w["fee"])
+    return f"""<section class="sec" aria-labelledby="fee-h"><div class="wrap">
+  <div class="hrow"><h2 id="fee-h">{e(w['fee_h'])}</h2>{readbtn(w)}</div>
+  <ul class="told">{fee}</ul>
+</div></section>
+<section class="sec" aria-labelledby="who-h"><div class="wrap">
   <h2 id="who-h">{e(w['who_h'])}</h2>
   <p>{e(w['who'])}</p>
   <p><a class="cta" href="mailto:nan@motdang.net?subject=FERC">{e(w['write'])}: nan@motdang.net</a></p>
@@ -459,6 +476,8 @@ def board(w, rel, path):
   <p class="lede">{e(w['board_lede'])}</p>
   <table class="board"><thead><tr><th scope="col">{e(c1)}</th><th scope="col">{e(c2)}</th><th scope="col">{e(c3)}</th></tr></thead><tbody>{rows}</tbody></table>
   <p class="ask">{e(w['board_ask'])}</p>
+  <h2>{e(w['fee_h'])}</h2>
+  <ul>{"".join(f"<li>{e(x)}</li>" for x in w["fee"])}</ul>
   <h2>{e(w['priv_h'])}</h2>
   <ul>{priv}</ul>
   <p class="small">{e(w['who'])} nan@motdang.net · {URL}</p>
