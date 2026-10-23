@@ -36,14 +36,14 @@
   var body = document.body, synth = window.speechSynthesis;
   var buttons = document.querySelectorAll('.read');
   if (!synth || !window.SpeechSynthesisUtterance) { buttons.forEach(function (b) { b.hidden = true; }); return; }
-  var lang = body.dataset.voice, current = null, queue = [], marked = null;
+  var lang = body.dataset.voice, current = null, queue = [], marked = null, run = 0;
   var SEL = 'h1,h2,h3,h4,legend,p,li,dt,dd,th,td,summary,label.pick,.opt';
   function label(b, on) {
     b.setAttribute('aria-pressed', on ? 'true' : 'false');
     b.lastChild.textContent = ' ' + (on ? body.dataset.stop : body.dataset.read);
   }
   function unmark() { if (marked) marked.classList.remove('speaking'); marked = null; }
-  function stop() { queue = []; synth.cancel(); unmark(); if (current) label(current, false); current = null; }
+  function stop() { run++; queue = []; synth.cancel(); unmark(); if (current) label(current, false); current = null; }
   function voice() {
     var vs = synth.getVoices(), base = lang.split('-')[0];
     return vs.filter(function (v) { return v.lang === lang && v.localService; })[0]
@@ -83,7 +83,8 @@
     var u = new SpeechSynthesisUtterance(b.text);
     u.lang = lang; var v = voice(); if (v) u.voice = v;
     u.rate = 0.9;
-    u.onend = u.onerror = function () { if (current) next(); };
+    var mine = run;
+    u.onend = u.onerror = function () { if (current && mine === run) next(); };
     synth.speak(u);
   }
   buttons.forEach(function (b) {
