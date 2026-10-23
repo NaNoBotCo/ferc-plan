@@ -650,6 +650,9 @@ PHOTOS = [
 
 e = html.escape
 
+import hashlib
+VER = hashlib.sha1((DOCS / "style.css").read_bytes() + (DOCS / "app.js").read_bytes()).hexdigest()[:8]
+
 
 def baht(n, w=None):
     if w and w["lang"].startswith("de"):
@@ -684,7 +687,7 @@ def head(w, rel, title, path):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
-<link rel="stylesheet" href="{rel}style.css">
+<link rel="stylesheet" href="{rel}style.css?v={VER}">
 <script>try{{var s=JSON.parse(localStorage.getItem('ferc')||'{{}}');if(s.big)document.documentElement.classList.add('big');if(s.theme)document.documentElement.dataset.theme=s.theme}}catch(_){{}}</script>
 </head>
 <body data-voice="{w['voice']}" data-read="{e(w['read'])}" data-stop="{e(w['stop'])}">
@@ -765,7 +768,7 @@ def foot(w, rel):
   <ul>{src}</ul>
   <p class="small">{e(w['photos'])}. {ph}</p>
 </footer>
-<script src="{rel}app.js"></script>
+<script src="{rel}app.js?v={VER}"></script>
 </body>
 </html>
 """
@@ -912,7 +915,7 @@ def page(w, rel, path):
   <details><summary>{e(w['src_h'])}</summary><ul class="small">{src}</ul><p class="small">{e(w['photos'])}. {ph}</p></details>
 </div></section>
 </main>
-<script src="{rel}app.js"></script>
+<script src="{rel}app.js?v={VER}"></script>
 </body>
 </html>
 """
@@ -964,7 +967,7 @@ def board(w, rel, path):
   {priv}
   <p class="small">{e(w['who'][0])} {MAIL} · {URL}</p>
 </main>
-<script src="{rel}app.js"></script>
+<script src="{rel}app.js?v={VER}"></script>
 </body>
 </html>
 """
