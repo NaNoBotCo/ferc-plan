@@ -103,3 +103,9 @@ h1,h2,h3,legend,.cta,.btn{hyphens:manual}
   .boardpage .lede,.boardpage p{margin:.35rem 0}
   .board th,.board td{padding:.3rem .35rem}
 }
+.ab{display:grid;gap:.8rem;margin:0 0 1rem}
+@media (min-width:44rem){.ab{grid-template-columns:1fr 1fr}}
+.opt{border:2px solid var(--line);border-radius:12px;padding:.8rem;background:var(--bg)}
+.opt h4{margin:0 0 .4rem;font-size:1.05rem}
+.opt p{margin:0}
+.opt .tag{display:inline-block;background:var(--acc);color:var(--acc-ink);font-weight:700;border-radius:999px;padding:0 .7rem;margin-bottom:.4rem}
