@@ -949,7 +949,7 @@ def board(w, rel, path):
     priv = ul(w["priv"], "")
     return head(w, rel, w["board_title"], path) + f"""
 <main class="wrap boardpage" id="plan">
-  <p class="noprint row"><a class="btn" href="../">← {e(w['back'])}</a> <button class="btn" type="button" onclick="window.print()">🖨️ {e(w['print'])}</button> <a class="btn" href="../#choose">✅ {e(w['board_web'])}</a></p>
+  <p class="noprint row"><a class="btn" href="../">← {e(w['back'])}</a> <button class="btn" type="button" onclick="window.print()">🖨️ {e(w['print'])}</button> <a class="btn" href="../#steps">✅ {e(w['board_web'])}</a></p>
   <p class="noprint help">{e(w['board_screen'])}</p>
   <h1>{e(w['board_title'])}</h1>
   <p class="lede">{e(w['board_lede'])}</p>
