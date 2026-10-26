@@ -20,8 +20,8 @@ a{color:var(--acc);text-underline-offset:.18em;text-decoration-thickness:.08em}
 .band.short::before{background:linear-gradient(180deg,rgba(0,0,0,0) 60%,rgba(0,0,0,.6) 100%)}
 @media (hover:none),(prefers-reduced-motion:reduce){.band{background-attachment:scroll}}
 .band .in{position:relative;max-width:36rem;margin:0 auto;padding:4rem 16px 3.2rem;width:100%}
-.band .cred{position:absolute;right:16px;bottom:.4rem;margin:0;font-size:.7rem;color:#eee}
-.kick{position:relative;z-index:1;margin:0 0 auto;padding:.6rem 16px;background:rgba(0,0,0,.85);color:#fff;font-size:.9rem;font-weight:700;text-align:center}
+.cred{max-width:36rem;margin:0 auto;padding:.7rem 16px;font-size:1rem;line-height:1.4;color:var(--soft);background:var(--bg)}
+.kick{position:relative;z-index:1;margin:0 0 auto;padding:.6rem 16px;background:rgba(0,0,0,.85);color:#fff;font-size:.9rem;font-weight:700;text-align:center;text-wrap:balance}
 h1{font-size:2.1rem;line-height:1.15;margin:0 0 1rem}
 .lede{font-size:1.1rem;margin:0 0 .8rem;max-width:40rem}
 .cta{display:inline-block;min-height:44px;padding:.55rem 1.1rem;border-radius:999px;background:var(--acc);color:var(--acc-ink);font-weight:700;text-decoration:none}
@@ -172,7 +172,6 @@ details[open] summary::after{content:"▴"}
 .speaking{background:#fff3a0!important;color:#141414!important;outline:4px solid #141414;border-radius:6px}
 .speaking *{color:#141414!important}
 .board .opts{font-weight:400;display:inline-block;margin-top:.3rem}
-@media screen{.boardpage .box{display:none}}
 body{padding-bottom:5rem}
 /* simple page */
 .sub{font-size:1.1rem;margin:.2rem 0 .6rem}
@@ -188,3 +187,14 @@ details.big>summary{min-height:56px}
 .step details{background:var(--bg)}
 #extras .pick b{display:block}
 #extras .pick .pr{display:block}
+/* board on a phone: step name first, then the Yes and No boxes side by side */
+@media (max-width:34rem){
+  .board tr{display:flex;flex-wrap:wrap;align-items:baseline;column-gap:1.4rem}
+  .board th{order:-1;flex:0 0 100%}
+  .board td{flex:0 0 100%}
+  .board td.box{flex:0 0 auto;width:auto;text-align:left;font-size:1.6rem;line-height:1.3}
+  .board td.box::before{font-size:1rem}
+  .board td.box:empty{display:none}
+}
+/* long German words in an open "More" fold break instead of widening the page */
+@media (max-width:34rem){.step details{overflow-wrap:anywhere}}
