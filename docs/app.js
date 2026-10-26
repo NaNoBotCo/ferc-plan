@@ -53,12 +53,14 @@
   function textOf(el) {
     var c = el.cloneNode(true);
     c.querySelectorAll('[aria-hidden="true"],.read,.vh,input,textarea,select').forEach(function (x) { x.remove(); });
-    return c.textContent.replace(/\s+/g, ' ').trim();
+    c.querySelectorAll('i').forEach(function (x) { x.insertAdjacentText('beforebegin', ' '); });
+    return c.textContent.replace(/\u00ad/g, '').replace(/\s+/g, ' ').trim();
   }
-  function hidden(el) {
-    if (el.closest('[hidden]')) return true;
+  // A closed "More" fold is read too: it opens when reading reaches it.
+  function hidden(el) { return !!el.closest('[hidden]'); }
+  function openFolds(el) {
     var d = el.closest('details');
-    return !!d && !d.open && !el.closest('summary');
+    while (d) { d.open = true; d = d.parentNode && d.parentNode.closest ? d.parentNode.closest('details') : null; }
   }
   function blocks(scope) {
     if (scope.id === 'send') {
@@ -66,7 +68,7 @@
       if (pv) return [{ el: pv.parentNode, text: pv.textContent }];
     }
     var all = Array.prototype.slice.call(scope.querySelectorAll(SEL)).filter(function (el) {
-      return !hidden(el) && !el.closest('.read');
+      return !hidden(el) && !el.closest('.read') && !el.closest('.vh');
     });
     // keep only the innermost blocks, so nothing is read twice
     return all.filter(function (el) {
@@ -78,6 +80,7 @@
     unmark();
     var b = queue.shift();
     if (!b) { stop(); return; }
+    openFolds(b.el);
     marked = b.el; marked.classList.add('speaking');
     try { marked.scrollIntoView({ block: 'center', behavior: 'smooth' }); } catch (_) { marked.scrollIntoView(); }
     var u = new SpeechSynthesisUtterance(b.text);

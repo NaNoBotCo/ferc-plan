@@ -40,7 +40,7 @@ WORDS = {
         "theme": "Light or dark",
         "read": "Read aloud",
         "stop": "Stop",
-        "kick": "For Eveline Willi and Heinz · Monday 26 October 2026, 7 pm",
+        "kick": "For Eveline Willi and Heinz · Monday 26\u00a0October 2026,\u00a07\u00a0pm",
         "h1": "More donations for FERC: a plan in five steps",
         "lede": [
             "Our work on steps 1 to 4 is free for FERC.",
@@ -75,7 +75,7 @@ WORDS = {
             ("28 Nov", "Your talk at the Expat Club"),
             ("29 Nov", "Fundraiser"),
             ("December", "Posts and newsletter for Christmas"),
-            ("January", "3 🖥️ Website · 5 📋 Sponsor reports start"),
+            ("January", "3 🖥️ Website · 4 📣 Ad Grants application · 5 📋 Sponsor reports start"),
             ("March", "3 🖥️ Website and 5 📋 report tool ready, with a short guide"),
         ],
         "plan_h": "The plan",
@@ -91,8 +91,8 @@ WORDS = {
                 "table": [
                     ("Thailand", "Bank transfer, as now. Since 1 January 2026, a Thai tax deduction for a gift to a foundation goes through e-Donation, the Revenue Department’s online system. We ask the treasurer whether FERC is registered. If not, we find out how FERC can register."),
                     ("Switzerland", "Bank transfer with a Swiss tax receipt, as now. The website explains it more clearly."),
-                    ("USA", "CAF America, a US charity, takes the gift, gives the donor a US tax receipt, and sends the money to FERC. FERC’s page on Every.org, a US giving website, works through Myriad USA, so it may close when FERC leaves Myriad."),
-                    ("Australia", "An Australian charity that can give Australian tax receipts, such as Global Development Group, takes gifts for FERC. This is not ready in November. Until then: bank transfer to FERC’s Thai account."),
+                    ("USA", "CAF America, a US charity, takes the gift, gives the donor a US tax receipt, and sends the money to FERC. A US donor who needs no tax receipt can also make a bank transfer to FERC’s Thai account, for example with Wise, a money-transfer service. FERC’s page on Every.org, a US giving website, works through Myriad USA, so it may close when FERC leaves Myriad."),
+                    ("Australia", "An Australian charity that can give Australian tax receipts, for example Global Development Group, could take gifts for FERC once it agrees. This takes longer than November. Until then: bank transfer to FERC’s Thai account."),
                     ("UK, Netherlands, others", "Bank transfer to FERC’s Thai account, for example with Wise, a money-transfer service. No tax receipt in the donor’s country."),
                 ],
                 "we": "Compare the ways to give, with costs and time. Prepare the papers for leaving Myriad and for CAF America. Write a short email to US and Australian donors. Build the “How to give” page.",
@@ -138,12 +138,12 @@ WORDS = {
                 "list": [
                     "Two posts a week on Facebook and LinkedIn in November and December: the talk, the fundraiser, Christmas",
                     "A short video made from the school map’s photos",
-                    "Google Ad Grants: free Google search ads for charities, up to US$10,000 a month. Google asks for a fast, secure website; step 3 gives FERC one. We check whether FERC can get them, and apply.",
+                    "Google Ad Grants: free Google search ads for charities, up to US$10,000 a month. Google asks for a fast, secure website; step 3 gives FERC one in January. We check whether FERC can get them. We apply in January, after step 3.",
                     "A count of website visits and clicks on “How to give”, for the board",
                 ],
-                "we": "Write the posts and make the video. Apply for Ad Grants.",
+                "we": "Write the posts and make the video in November and December. In January, after step 3, apply for Ad Grants.",
                 "you": "Once a month, say yes to that month’s posts. FERC posts them, or gives us access to post.",
-                "when": "November and December",
+                "when": "November and December for posts and video. January, after step 3, to apply for Ad Grants.",
                 "cost": "Free",
             },
             {
@@ -273,7 +273,7 @@ WORDS = {
         "theme": "Hell oder dunkel",
         "read": "Vorlesen",
         "stop": "Stopp",
-        "kick": "Für Eveline Willi und Heinz · Montag, 26. Oktober 2026, 19 Uhr",
+        "kick": "Für Eveline Willi und Heinz · Montag, 26.\u00a0Oktober 2026,\u00a019\u00a0Uhr",
         "h1": "Mehr Spenden für FERC: ein Plan in fünf Schritten",
         "lede": [
             "Unsere Arbeit für die Schritte 1 bis 4 ist für FERC gratis.",
@@ -308,7 +308,7 @@ WORDS = {
             ("28. Nov.", "Ihr Vortrag im Expat Club"),
             ("29. Nov.", "Spendenanlass"),
             ("Dezember", "Beiträge und Newsletter für Weihnachten"),
-            ("Januar", "3 🖥️ Website · 5 📋 Patenberichte beginnen"),
+            ("Januar", "3 🖥️ Website · 4 📣 Antrag auf Ad Grants · 5 📋 Patenberichte beginnen"),
             ("März", "3 🖥️ Website und 5 📋 Berichts-Werkzeug bereit, mit einer kurzen Anleitung"),
         ],
         "plan_h": "Der Plan",
@@ -324,8 +324,8 @@ WORDS = {
                 "table": [
                     ("Thailand", "Banküberweisung wie heute. Seit dem 1. Januar 2026 läuft ein thailändischer Steuerabzug für eine Spende an eine Stiftung über e-Donation, das Online-System der Steuerbehörde. Wir fragen den Kassier, ob FERC eingetragen ist. Falls nicht, klären wir, was für den Eintrag nötig ist."),
                     ("Schweiz", "Banküberweisung mit Schweizer Spendenbestätigung, wie heute. Die Website erklärt es klarer."),
-                    ("USA", "CAF America, eine gemeinnützige Organisation in den USA, nimmt die Spende an, gibt eine US-Spendenbestätigung und schickt das Geld an FERC. Die Seite von FERC auf Every.org, einer amerikanischen Spenden-Website, läuft über Myriad USA und wird deshalb vielleicht eingestellt, wenn FERC Myriad verlässt."),
-                    ("Australien", "Eine australische gemeinnützige Organisation, die australische Spendenbestätigungen ausstellen darf, zum Beispiel Global Development Group, nimmt Spenden für FERC an. Das dauert länger als bis November. Bis dahin: Überweisung auf das thailändische Konto von FERC."),
+                    ("USA", "CAF America, eine gemeinnützige Organisation in den USA, nimmt die Spende an, gibt eine US-Spendenbestätigung und schickt das Geld an FERC. Wer aus den USA spendet und keine Spendenbestätigung braucht, kann auch auf das thailändische Konto von FERC überweisen, zum Beispiel mit Wise, einem Dienst für Geldüberweisungen. Die Seite von FERC auf Every.org, einer amerikanischen Spenden-Website, läuft über Myriad USA und wird deshalb vielleicht eingestellt, wenn FERC Myriad verlässt."),
+                    ("Australien", "Eine australische gemeinnützige Organisation, die australische Spendenbestätigungen ausstellen darf, zum Beispiel Global Development Group, könnte Spenden für FERC annehmen, wenn sie zustimmt. Das dauert länger als bis November. Bis dahin: Überweisung auf das thailändische Konto von FERC."),
                     ("Grossbritannien, Niederlande, andere", "Überweisung auf das thailändische Konto von FERC, zum Beispiel mit Wise, einem Dienst für Geldüberweisungen. Keine Spendenbestätigung im Land des Spenders."),
                 ],
                 "we": "Die Wege vergleichen, mit Kosten und Dauer. Die Unterlagen für den Ausstieg bei Myriad und für CAF America vorbereiten. Eine kurze E-Mail an die Spender in den USA und Australien schreiben. Die Seite «So können Sie spenden» bauen.",
@@ -371,12 +371,12 @@ WORDS = {
                 "list": [
                     "Zwei Beiträge pro Woche auf Facebook und LinkedIn im November und Dezember: der Vortrag, der Spendenanlass, Weihnachten",
                     "Ein kurzes Video aus den Fotos der Schulkarte",
-                    "Google Ad Grants: Gratis-Werbung in der Google-Suche für gemeinnützige Organisationen, bis 10’000 US-Dollar pro Monat. Google verlangt eine schnelle, sichere Website; Schritt 3 gibt FERC eine. Wir prüfen, ob FERC sie bekommen kann, und stellen den Antrag.",
+                    "Google Ad Grants: Gratis-Werbung in der Google-Suche für gemeinnützige Organisationen, bis 10’000 US-Dollar pro Monat. Google verlangt eine schnelle, sichere Website; Schritt 3 gibt FERC im Januar eine. Wir prüfen, ob FERC sie bekommen kann. Wir stellen den Antrag im Januar, nach Schritt 3.",
                     "Eine Zählung der Website-Besuche und der Klicks auf «So können Sie spenden», für den Vorstand",
                 ],
-                "we": "Die Beiträge schreiben und das Video machen. Ad Grants beantragen.",
+                "we": "Die Beiträge schreiben und das Video im November und Dezember machen. Im Januar, nach Schritt 3, Ad Grants beantragen.",
                 "you": "Einmal pro Monat Ja sagen zu den Beiträgen des Monats. FERC veröffentlicht sie, oder gibt uns Zugang dafür.",
-                "when": "November und Dezember",
+                "when": "November und Dezember für Beiträge und Video. Januar, nach Schritt 3, für den Antrag auf Ad Grants.",
                 "cost": "Gratis",
             },
             {
@@ -523,7 +523,7 @@ STEPMETA = {
         {"icon": "📣", "short": "More people see FERC", "core": [
             "Two posts a week in November and December.",
             "A short video from the school map.",
-            "Free Google ads for charities (Ad Grants), if Google says yes.",
+            "In January, after the new website (step 3): we apply for free Google ads for charities (Ad Grants). Google decides.",
         ]},
         {"icon": "📋", "short": "Sponsor reports", "core": [
             "From January: one shared list instead of two.",
@@ -553,7 +553,7 @@ STEPMETA = {
         {"icon": "📣", "short": "Mehr Menschen sehen FERC", "core": [
             "Zwei Beiträge pro Woche im November und Dezember.",
             "Ein kurzes Video aus der Schulkarte.",
-            "Gratis-Werbung bei Google für gemeinnützige Organisationen (Ad Grants), wenn Google Ja sagt.",
+            "Im Januar, nach der neuen Website (Schritt 3): Wir beantragen Gratis-Werbung bei Google für gemeinnützige Organisationen (Ad Grants). Google entscheidet.",
         ]},
         {"icon": "📋", "short": "Patenberichte", "core": [
             "Ab Januar: eine gemeinsame Liste statt zwei.",
@@ -578,7 +578,7 @@ SIMPLE = {
             "A clear way to give from each country, and help leaving Myriad.",
             "Move the newsletter to Brevo, free for more than 500 people.",
             "A new website with the school map. Choose A or B.",
-            "Posts, a short video and free Google ads for FERC.",
+            "November and December: posts and a short video. January: we apply for free Google ads.",
             "One list instead of two, so sponsor reports take less work.",
         ],
         "costs": ["Free", "Free", "Free", "Free", "Price in January"],
@@ -607,7 +607,7 @@ SIMPLE = {
             "Ein klarer Weg zu spenden aus jedem Land, und Hilfe beim Ausstieg bei Myriad.",
             "Den Newsletter zu Brevo übertragen, gratis für mehr als 500 Personen.",
             "Eine neue Website mit der Schulkarte. A oder B wählen.",
-            "Beiträge, ein kurzes Video und Gratis-Werbung bei Google für FERC.",
+            "November und Dezember: Beiträge und ein kurzes Video. Januar: Wir beantragen Gratis-Werbung bei Google.",
             "Eine Liste statt zwei, damit Patenberichte weniger Arbeit machen.",
         ],
         "costs": ["Gratis", "Gratis", "Gratis", "Gratis", "Preis im Januar"],
@@ -840,8 +840,11 @@ def card(w, i, s):
         more.append(f'<p><a class="btn" href="{MAP}">{e(s["map"])} →</a></p>')
     if s.get("p2"):
         more.append(f"<p>{e(s['p2'])}</p>")
+    body = "".join(more)
+    if w["lang"].startswith("de"):
+        body = body.replace("Spendenbestätigung", "Spenden&shy;bestätigung")  # a soft hyphen where the long word may break
     return (f'<li class="step" id="step{n}"><section aria-labelledby="c{n}-h">{head_}{facts}{decide}'
-            f'<details><summary>{e(w["more_s"])}</summary>{"".join(more)}</details></section></li>')
+            f'<details><summary>{e(w["more_s"])}</summary>{body}</details></section></li>')
 
 
 def page(w, rel, path):
@@ -876,8 +879,8 @@ def page(w, rel, path):
     {lede}
     <p class="row"><a class="cta light" href="#steps">↓ {e(w['start'])}</a> <a class="cta ghost" href="board/">🖨️ {e(w['board_btn'])}</a> {readbtn(w)}</p>
   </section>
-  <p class="cred">{e(w['road'])}</p>
 </header>
+<p class="cred">{e(w['road'])}</p>
 <main>
 <form id="chooser" action="#send" onsubmit="return false" data-cfg="{e(cfg)}">
 <section class="sec" id="steps" aria-labelledby="steps-h"><div class="wrap" id="plan">
