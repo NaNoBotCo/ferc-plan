@@ -198,3 +198,6 @@ details.big>summary{min-height:56px}
 }
 /* long German words in an open "More" fold break instead of widening the page */
 @media (max-width:34rem){.step details{overflow-wrap:anywhere}}
+
+.gone{margin:0;padding:.8rem 16px;background:var(--acc);color:var(--acc-ink);font-weight:700;text-align:center;text-wrap:balance}
+@media print{.gone{background:none;color:#000;border:2px solid #000}}
