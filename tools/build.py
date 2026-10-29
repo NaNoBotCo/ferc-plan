@@ -35,6 +35,7 @@ WORDS = {
         "title": "FERC · Plan for donations",
         "desc": "A plan in five steps for FERC: ways to give from each country, a newsletter for more than 500 people, the website with the school map, more people seeing FERC, and sponsor reports with less work.",
         "skip": "Skip to the plan",
+        "replaced": "Replaced by our proposal of 29 October, sent to Eveline by email.",
         "other": ("Deutsch", "de/"),
         "aa": "Text size",
         "theme": "Light or dark",
@@ -268,6 +269,7 @@ WORDS = {
         "title": "FERC · Plan für Spenden",
         "desc": "Ein Plan in fünf Schritten für FERC: Spenden aus jedem Land, ein Newsletter für mehr als 500 Personen, die Website mit der Schulkarte, mehr Sichtbarkeit und Patenberichte mit weniger Aufwand.",
         "skip": "Zum Plan springen",
+        "replaced": "Ersetzt durch unseren Vorschlag vom 29. Oktober, per Mail an Eveline geschickt.",
         "other": ("English", "../"),
         "aa": "Schriftgrösse",
         "theme": "Hell oder dunkel",
@@ -697,6 +699,7 @@ def head(w, rel, title, path):
   <button class="btn" type="button" id="aa" aria-pressed="false"><span aria-hidden="true">A<span class="a2">A</span></span> {e(w['aa'])}</button>
   <button class="btn" type="button" id="theme"><span aria-hidden="true">◐</span> {e(w['theme'])}</button>
 </div>
+<p class="gone" role="note">{e(w['replaced'])}</p>
 """
 
 
